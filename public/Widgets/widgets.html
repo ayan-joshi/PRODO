@@ -20,80 +20,80 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src=""></script>
 
-        <!-- auth -->
-        <script type="module">
-            // Import functions
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-            import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
-    
-            // Firebase configuration
-            const firebaseConfig = {
-                apiKey: "AIzaSyD6cBjkEmTTc7uVNC3sD0RlFgF_9fAPY9g",
-                authDomain: "student-web-desk.firebaseapp.com",
-                databaseURL: "https://student-web-desk-default-rtdb.firebaseio.com",
-                projectId: "student-web-desk",
-                storageBucket: "student-web-desk.appspot.com",
-                messagingSenderId: "97747219553",
-                appId: "1:97747219553:web:fed6cae0333b3eedc02620",
-                measurementId: "G-LT7LDF5MRT"
-            };
-    
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const auth = getAuth();
-    
-            // listen for current user
-            onAuthStateChanged(auth, (user) => {
-                if (user) {
-                    // User is signed in
-                    const uid = user.uid;
-                    // ...
-                    console.log(uid);
-    
-                    var loggedInUser = document.querySelector("#user_email");
-                    loggedInUser = user.email;
-    
-                    // ...
-                    console.log(loggedInUser);
-    
-                    $("#userInfoEmail").text(loggedInUser);
-                    $("#userCard").show();
-                    $("#logoutButton").show();
-                } else {
-                    // User is signed out
-                    // ...
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide and redirect after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-    
-                        window.location.href = '../index.html';
-                    }, 3000);
-                }
+    <!-- auth -->
+    <script type="module">
+        // Import functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD6cBjkEmTTc7uVNC3sD0RlFgF_9fAPY9g",
+            authDomain: "student-web-desk.firebaseapp.com",
+            databaseURL: "https://student-web-desk-default-rtdb.firebaseio.com",
+            projectId: "student-web-desk",
+            storageBucket: "student-web-desk.appspot.com",
+            messagingSenderId: "97747219553",
+            appId: "1:97747219553:web:fed6cae0333b3eedc02620",
+            measurementId: "G-LT7LDF5MRT"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+        // listen for current user
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in
+                const uid = user.uid;
+                // ...
+                console.log(uid);
+
+                var loggedInUser = document.querySelector("#user_email");
+                loggedInUser = user.email;
+
+                // ...
+                console.log(loggedInUser);
+
+                $("#userInfoEmail").text(loggedInUser);
+                $("#userCard").show();
+                $("#logoutButton").show();
+            } else {
+                // User is signed out
+                // ...
+                $("#alertInfoModal").modal('show');
+
+                // hide and redirect after 3 sec
+                setTimeout(function () {
+                    $("#alertInfoModal").modal('hide');
+
+                    window.location.href = '../index.html';
+                }, 3000);
+            }
+        });
+
+        // logging out
+        const logoutButton = document.querySelector("#logoutButton");
+        logoutButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            auth.signOut().then(() => {
+                console.log("user logged out");
+
+                // show alert
+                $("#alertInfoModal").modal('show');
+
+                // hide after 3 sec
+                setTimeout(function () {
+                    $("#alertInfoModal").modal('hide');
+                }, 3000);
+
             });
-    
-            // logging out
-            const logoutButton = document.querySelector("#logoutButton");
-            logoutButton.addEventListener('click', (e) => {
-                e.preventDefault();
-    
-                auth.signOut().then(() => {
-                    console.log("user logged out");
-    
-                    // show alert
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-                    }, 3000);
-    
-                });
-    
-            });
-    
-        </script>
+
+        });
+
+    </script>
 </head>
 
 <body>
@@ -105,10 +105,10 @@
             </div>
         </a>
         <div class="menu_bar">
-			<a href="../Dashboard/dashboard.html">
-				<h3 id="menu_dashboard">Dashboard</h3>
-			</a>
-           
+            <a href="../Dashboard/dashboard.html">
+                <h3 id="menu_dashboard">Dashboard</h3>
+            </a>
+
             <a href="../Calendar/calendar.html">
                 <h3 id="menu_calendar">Calendar</h3>
             </a>
@@ -143,119 +143,139 @@
 
     </div>
     <div class="pricing-container">
-		<div class="pricing-switcher">
-			<p class="fieldset">
-				<input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
-				<label for="monthly-1">Plans</label>
-			</p>
-		</div>
-		<ul class="pricing-list bounce-invert">
-			<li>
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Basic</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">30</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>5</em> Email Accounts</li>
-								<li><em>1</em> Template Style</li>
-								<li><em>25</em> Products Loaded</li>
-								<li><em>1</em> Image per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li class="exclusive">
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Exclusive</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">60</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>15</em> Email Accounts</li>
-								<li><em>3</em> Template Styles</li>
-								<li><em>40</em> Products Loaded</li>
-								<li><em>7</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Pro</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">90</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>20</em> Email Accounts</li>
-								<li><em>5</em> Template Styles</li>
-								<li><em>50</em> Products Loaded</li>
-								<li><em>10</em> Images per Product</li>
-								<li><em>Unlimited</em> Bandwidth</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+        <div class="pricing-switcher">
+            <p class="fieldset">
+                <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
+                <label for="monthly-1">Plans</label>
+            </p>
+        </div>
 
-            <!--
+
+        <ul class="pricing-list bounce-invert">
+
+            <div class="plans">
+
+                <div class="basic plansbox">
+
+                    <li>
+                        <ul class="pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="pricing-header">
+                                    <h2>Basic</h2>
+                                    <hr>
+                                    <div class="price">
+                                        <span class="currency">$</span>
+                                        <span class="value">30</span>
+                                        <span class="duration">mo</span>
+                                    </div>
+                                </header>
+                                <div class="pricing-body">
+                                    <ul class="pricing-features">
+                                        <li><em>5</em> Email Accounts</li>
+                                        <li><em>1</em> Template Style</li>
+                                        <li><em>25</em> Products Loaded</li>
+                                        <li><em>1</em> Image per Product</li>
+                                        <li><em>Unlimited</em> Bandwidth</li>
+                                        <li><em>24/7</em> Support</li>
+                                    </ul>
+                                </div>
+                                <footer class="pricing-footer">
+                                    <a class="select shrink-border" href="#">Sign Up</a>
+                                </footer>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="exclusive plansbox">
+
+                    <li class="exclusive">
+                        <ul class="pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="pricing-header">
+                                    <h2>Exclusive</h2>
+                                    <hr>
+                                    <div class="price">
+                                        <span class="currency">$</span>
+                                        <span class="value">60</span>
+                                        <span class="duration">mo</span>
+                                    </div>
+                                </header>
+                                <div class="pricing-body">
+                                    <ul class="pricing-features">
+                                        <li><em>15</em> Email Accounts</li>
+                                        <li><em>3</em> Template Styles</li>
+                                        <li><em>40</em> Products Loaded</li>
+                                        <li><em>7</em> Images per Product</li>
+                                        <li><em>Unlimited</em> Bandwidth</li>
+                                        <li><em>24/7</em> Support</li>
+                                    </ul>
+                                </div>
+                                <footer class="pricing-footer">
+                                    <a class="select shrink-border" href="#">Sign Up</a>
+                                </footer>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="pro plansbox">
+
+                    <li>
+                        <ul class="pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="pricing-header">
+                                    <h2>Pro</h2>
+                                    <hr>
+                                    <div class="price">
+                                        <span class="currency">$</span>
+                                        <span class="value">90</span>
+                                        <span class="duration">mo</span>
+                                    </div>
+                                </header>
+                                <div class="pricing-body">
+                                    <ul class="pricing-features">
+                                        <li><em>20</em> Email Accounts</li>
+                                        <li><em>5</em> Template Styles</li>
+                                        <li><em>50</em> Products Loaded</li>
+                                        <li><em>10</em> Images per Product</li>
+                                        <li><em>Unlimited</em> Bandwidth</li>
+                                        <li><em>24/7</em> Support</li>
+                                    </ul>
+                                </div>
+                                <footer class="pricing-footer">
+                                    <a class="select shrink-border" href="#">Sign Up</a>
+                                </footer>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+        </ul>
+    </div>
+    </div>
+
+    <!--
             </div>
             <div class="right_box"> <img src="productivity.jpg" class="page_image">
             </div>
-            -->
-          
+        -->
 
-             <!-- alert info modal -->
-            
 
-        
-        <!-- BootStrap -->
+    <!-- alert info modal -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+
+
+    <!-- BootStrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

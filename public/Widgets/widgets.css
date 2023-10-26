@@ -52,8 +52,6 @@ a {
     font-weight: bold;
 }
 
-
-
 .menu_icon div {
     width: 35px;
     height: 5px;
@@ -904,3 +902,45 @@ a {
     transform: perspective(2000px) rotateY(0);
   }
 }
+
+
+/* Rishi's code */
+.plans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.plansbox{
+  margin: 10px 40px;
+  height: 630px;
+}
+
+.plansbox:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.basic{
+  width: 15vw;
+}
+
+.exclusive{
+  width: 20vw;
+}
+
+.pro{
+  width: 15vw;
+}
+
+
+
+
+
+
+
+
+/* end */
