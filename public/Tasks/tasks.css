@@ -196,6 +196,7 @@ td {
 body {
     font-family: 'Fira Code';
     margin: 0;
+    background-color: rgba(255, 255, 0, 0.336);
 }
 
 html {
@@ -215,8 +216,8 @@ html {
 }
 
 .row {
-    background-color: rgba(71, 71, 71, 0.116);
-    border: 1px solid rgba(128, 128, 128, 0.432);
+    background-color: rgba(255, 0, 0, 0.342);
+    border: 1px solid gray;
     padding: 60px;
 }
 
@@ -229,7 +230,7 @@ html {
 
 
 .card {
-    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.308);
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.308);
     margin: 20px;
 }
 
@@ -237,28 +238,28 @@ html {
 #one {
     padding: 10px;
     background: linear-gradient(135deg,
-            #00000077,
+            #000000e7,
             #c0bebe00);
 }
 
 #two {
     padding: 10px;
     background: linear-gradient(225deg,
-            #00000077,
+            #000000e7,
             #c0bebe00);
 }
 
 #three {
     padding: 10px;
     background: linear-gradient(45deg,
-            #00000077,
+            #000000e7,
             #c0bebe00);
 }
 
 #four {
     padding: 10px;
     background: linear-gradient(315deg,
-            #00000077,
+            #000000e7,
             #c0bebe00);
 }
 
@@ -267,10 +268,10 @@ html {
     cursor: pointer;
     transition: all 0.1s ease-in;
     border: 6px double black;
-    color: rgb(255, 123, 0);
 }
 
 .card:hover h5 {
+    color: rgb(255, 123, 0);
     transition: all 0.1s ease-in;
     font-size: 22;
     font-weight: bold;
@@ -280,13 +281,18 @@ html {
     padding: 50px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: rgba(3, 236, 253, 0.178);
+    background-color: rgba(3, 236, 253, 0.616);
     color: black;
     border: 2px solid grey;
 }
 
 .container {
+    border: 1px solid white;
     padding: 0 16px;
+    background: linear-gradient(315deg,
+            #0000007e,
+            #ffffff);
+
 }
 
 .row {
@@ -302,12 +308,6 @@ html {
     margin-top: 5%;
 }
 
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .title {
     color: white;
@@ -319,14 +319,14 @@ html {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #04033de5;
     text-align: center;
     cursor: pointer;
     width: 100%;
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #03011b;
 }
 
 footer {
@@ -347,29 +347,22 @@ footer {
 }
 
 .footer-first h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#footer {
+#github {
     color: #00ffd5;
     font-size: small;
     margin: 0 5px;
     padding: 5px;
 }
 
-#footer:hover {
+#github:hover {
     cursor: pointer;
-    border: 1px solid #ffa600;
-    border-radius: 3px;
-
-}
-
-.footer i,
-a {
-    margin: 0 2px;
-    font-size: 22px;
     text-decoration: none;
 }
+
 
 @media screen and (max-width: 650px) {
     .column {
