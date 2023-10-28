@@ -254,7 +254,7 @@ body {
 	font-size: 1.6rem;
 	font-family: "Open Sans", sans-serif;
 	color: #2d3d4f;
-	background-color: #1bbc9d;
+	background-color: #0dcfa8;
 }
 
 a {
@@ -905,3 +905,82 @@ a {
   }
 }
 
+/* rishi code*/
+.exclusive{
+  background-color: rgb(224, 224, 233);
+  color: #000;
+}
+
+#one:hover,#two:hover,#three:hover{
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#basic{
+  width: 30%;
+}
+
+#exclusive{
+  width: 40%;
+}
+
+#pro{
+  width: 30%;
+}
+
+#one,#three{
+  border: 5px solid rgb(189, 187, 181);
+  border-radius: 5px;
+  margin: 15px;
+  background-color: rgba(28, 255, 7, 0.5);
+}
+
+#one h2,#three h2{
+  font-weight: 700;
+  color: #000;
+}
+
+#two{
+  border: 5px solid rgb(255, 208, 0);
+  border-radius: 5px;
+  margin: 15px;
+  background-color: rgba(85, 255, 7, 0.651);
+}
+
+#two h2{
+  font-weight: 800;
+  color: #000;
+}
+
+.select{
+  border: 1px solid gray;
+}
+
+.select:hover{
+  transition: all 0.1s ;
+  transform: scale(1.07);
+  text-decoration: none;
+  background-color: #0011ff69;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of code */
