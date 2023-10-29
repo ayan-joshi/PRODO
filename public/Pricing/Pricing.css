@@ -254,7 +254,7 @@ body {
 	font-size: 1.6rem;
 	font-family: "Open Sans", sans-serif;
 	color: #2d3d4f;
-	background-color: #0dcfa8;
+	background-color: white;
 }
 
 a {
@@ -526,6 +526,7 @@ a {
 .value {
 	font-size: 3rem;
 	font-weight: 300;
+  color: black;
 }
 
 .duration {
@@ -713,197 +714,6 @@ a {
     border-radius: 0 0 4px 4px;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(200deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(180deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  0% {
-    -moz-transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -moz-transform: perspective(2000px) rotateY(200deg);
-  }
-  100% {
-    -moz-transform: perspective(2000px) rotateY(180deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-    -moz-transform: perspective(2000px) rotateY(0);
-    -ms-transform: perspective(2000px) rotateY(0);
-    -o-transform: perspective(2000px) rotateY(0);
-    transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(200deg);
-    -moz-transform: perspective(2000px) rotateY(200deg);
-    -ms-transform: perspective(2000px) rotateY(200deg);
-    -o-transform: perspective(2000px) rotateY(200deg);
-    transform: perspective(2000px) rotateY(200deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(180deg);
-    -moz-transform: perspective(2000px) rotateY(180deg);
-    -ms-transform: perspective(2000px) rotateY(180deg);
-    -o-transform: perspective(2000px) rotateY(180deg);
-    transform: perspective(2000px) rotateY(180deg);
-  }
-}
-
-@-webkit-keyframes rotate-inverse {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(-180deg);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(20deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-  }
-}
-
-@-moz-keyframes rotate-inverse {
-  0% {
-    -moz-transform: perspective(2000px) rotateY(-180deg);
-  }
-  70% {
-    -moz-transform: perspective(2000px) rotateY(20deg);
-  }
-  100% {
-    -moz-transform: perspective(2000px) rotateY(0);
-  }
-}
-
-@keyframes rotate-inverse {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(-180deg);
-    -moz-transform: perspective(2000px) rotateY(-180deg);
-    -ms-transform: perspective(2000px) rotateY(-180deg);
-    -o-transform: perspective(2000px) rotateY(-180deg);
-    transform: perspective(2000px) rotateY(-180deg);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(20deg);
-    -moz-transform: perspective(2000px) rotateY(20deg);
-    -ms-transform: perspective(2000px) rotateY(20deg);
-    -o-transform: perspective(2000px) rotateY(20deg);
-    transform: perspective(2000px) rotateY(20deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-    -moz-transform: perspective(2000px) rotateY(0);
-    -ms-transform: perspective(2000px) rotateY(0);
-    -o-transform: perspective(2000px) rotateY(0);
-    transform: perspective(2000px) rotateY(0);
-  }
-}
-
-@-webkit-keyframes rotate-back {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(-200deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(-180deg);
-  }
-}
-
-@-moz-keyframes rotate-back {
-  0% {
-    -moz-transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -moz-transform: perspective(2000px) rotateY(-200deg);
-  }
-  100% {
-    -moz-transform: perspective(2000px) rotateY(-180deg);
-  }
-}
-
-@keyframes rotate-back {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-    -moz-transform: perspective(2000px) rotateY(0);
-    -ms-transform: perspective(2000px) rotateY(0);
-    -o-transform: perspective(2000px) rotateY(0);
-    transform: perspective(2000px) rotateY(0);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(-200deg);
-    -moz-transform: perspective(2000px) rotateY(-200deg);
-    -ms-transform: perspective(2000px) rotateY(-200deg);
-    -o-transform: perspective(2000px) rotateY(-200deg);
-    transform: perspective(2000px) rotateY(-200deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(-180deg);
-    -moz-transform: perspective(2000px) rotateY(-180deg);
-    -ms-transform: perspective(2000px) rotateY(-180deg);
-    -o-transform: perspective(2000px) rotateY(-180deg);
-    transform: perspective(2000px) rotateY(-180deg);
-  }
-}
-
-@-webkit-keyframes rotate-inverse-back {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(180deg);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(-20deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-  }
-}
-
-@-moz-keyframes rotate-inverse-back {
-  0% {
-    -moz-transform: perspective(2000px) rotateY(180deg);
-  }
-  70% {
-    -moz-transform: perspective(2000px) rotateY(-20deg);
-  }
-  100% {
-    -moz-transform: perspective(2000px) rotateY(0);
-  }
-}
-
-@keyframes rotate-inverse-back {
-  0% {
-    -webkit-transform: perspective(2000px) rotateY(180deg);
-    -moz-transform: perspective(2000px) rotateY(180deg);
-    -ms-transform: perspective(2000px) rotateY(180deg);
-    -o-transform: perspective(2000px) rotateY(180deg);
-    transform: perspective(2000px) rotateY(180deg);
-  }
-  70% {
-    -webkit-transform: perspective(2000px) rotateY(-20deg);
-    -moz-transform: perspective(2000px) rotateY(-20deg);
-    -ms-transform: perspective(2000px) rotateY(-20deg);
-    -o-transform: perspective(2000px) rotateY(-20deg);
-    transform: perspective(2000px) rotateY(-20deg);
-  }
-  100% {
-    -webkit-transform: perspective(2000px) rotateY(0);
-    -moz-transform: perspective(2000px) rotateY(0);
-    -ms-transform: perspective(2000px) rotateY(0);
-    -o-transform: perspective(2000px) rotateY(0);
-    transform: perspective(2000px) rotateY(0);
-  }
-}
 
 /* rishi code*/
 .exclusive{
@@ -930,10 +740,10 @@ a {
 }
 
 #one,#three{
-  border: 5px solid rgb(189, 187, 181);
+  border: 2px solid black;
   border-radius: 5px;
   margin: 15px;
-  background-color: rgba(28, 255, 7, 0.5);
+  background-color: rgb(85,208,156);
 }
 
 #one h2,#three h2{
@@ -942,10 +752,10 @@ a {
 }
 
 #two{
-  border: 5px solid rgb(255, 208, 0);
+  border: 2px solid black;
   border-radius: 5px;
   margin: 15px;
-  background-color: rgba(85, 255, 7, 0.651);
+  background-color: rgb(85,208,156);
 }
 
 #two h2{
@@ -954,14 +764,14 @@ a {
 }
 
 .select{
-  border: 1px solid gray;
+  border: 1px solid black;
 }
 
 .select:hover{
   transition: all 0.1s ;
   transform: scale(1.07);
   text-decoration: none;
-  background-color: #0011ff69;
+  background-color:  rgb(67, 255, 177);
 }
 
 
