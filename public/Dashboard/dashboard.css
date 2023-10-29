@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(85,208,156);
+    background-color: white;
 }
 
 .header {
@@ -98,6 +98,7 @@ a {
 }
 
 .left_box {
+    flex: auto;
     width: 30%;
     height: 100%;
 }
@@ -107,14 +108,14 @@ a {
     width: 40%;
     height: 100%;
     /* Positioned to the left */
-    margin-left: 10%;
+    margin-right: 10%;
     /* background-image: linear-gradient(to bottom, rgb(29, 230, 146), rgb(217, 243, 232)); */
 }
 
 .middle_box td{
     border: 6px double black;
     padding: 10px;
-    background-color: rgb(105, 248, 177);
+    background-color: white;
 }
 
 .middle_box td:hover{
@@ -163,6 +164,7 @@ a {
     flex: 1;
     padding: 15px;
     transition: transform 0.3s ease-in-out;
+  
 }
 
 .card:hover {
