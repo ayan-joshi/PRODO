@@ -28,14 +28,14 @@
 
         // Firebase configuration
         const firebaseConfig = {
-                apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
-                authDomain: "student-webdesk.firebaseapp.com",
-                databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
-                projectId: "student-webdesk",
-                storageBucket: "student-webdesk.appspot.com",
-                messagingSenderId: "594056866812",
-                appId: "1:594056866812:web:3dd340a4f54dd149f42079"
-            };
+            apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
+            authDomain: "student-webdesk.firebaseapp.com",
+            databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
+            projectId: "student-webdesk",
+            storageBucket: "student-webdesk.appspot.com",
+            messagingSenderId: "594056866812",
+            appId: "1:594056866812:web:3dd340a4f54dd149f42079"
+        };
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
@@ -120,8 +120,8 @@
             <a href="../Notes/notes.html">
                 <h3 id="menu_notes">Notes</h3>
             </a>
-           
-            
+
+
         </div>
 
         <!-- user card -->
@@ -141,103 +141,114 @@
     </div>
 
     <div class="content_pane">
-        <div class="card">
+        <div class="cardimg">
             <img src="multitask.jpg" class="page_image">
         </div>
 
-        <div class="card-container">
-            <div class="card">
-                <table style="width: 65%;">
-                    <tr>
-                        <th>
-                        <td>
-                            <a href="../Calendar/calendar.html"> <img src="content images/calendar.jpg"
-                                    class="content_image">
-                                <p>Calendar</p>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../ToDo/todo.html"> <img src="content images/todo.jpg" class="content_image">
-                                <p>Kanban</p>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../Tasks/tasks.html"><img src="content images/reminders.jpg" class="content_image">
-                                <p>About Us</p>
-                            </a>
-                        </td>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                        <td>
-                            <a href="../Pomodoro/Pomodoro.html"><img src="content images/pomodoro.jpg" class="content_image">
-                                <p> Pomodoro </p>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../Pricing/Pricing.html"><img src="content images/Pricing.jpg" class="content_image">
-                                <p> Pricing </p>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../Notes/notes.html"><img src="content images/notes.jpg" class="content_image">
-                                <p> Notes </p>
-                            </a>
-                        </td>
-                        </th>
-                    </tr>
-                </table>
+        <div class="cards-container">
+            <div class="card-content">
+                <a href="../Calendar/calendar.html">
+                    <img src="content images/calendar.jpg" class="content_image">
+                    <h4>Calendar</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
 
-            <!--
+            <div class="card-content">
+                <a href="../ToDo/todo.html">
+                    <img src="content images/todo.jpg" class="content_image">
+                    <h4>Kanban</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="card-content">
+                <a href="../Tasks/tasks.html">
+                    <img src="content images/reminders.jpg" class="content_image">
+                    <h4>About Us</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="card-content">
+                <a href="../Pomodoro/Pomodoro.html">
+                    <img src="content images/pomodoro.jpg" class="content_image">
+                    <h4>Pomodoro</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="card-content">
+                <a href="../Pricing/Pricing.html">
+                    <img src="content images/Pricing.jpg" class="content_image">
+                    <h4>Pricing</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="card-content">
+                <a href="../Notes/notes.html">
+                    <img src="content images/notes.jpg" class="content_image">
+                    <h4>Notes</h4>
+                </a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+
+        <!--
         </div>
         <div class="right_box"> <img src="productivity.jpg" class="page_image">
         </div>
         -->
 
-            <!-- alert info modal -->
-            <div class="modal fade" id="alertInfoModal" tabindex="-1" role="dialog"
-                aria-labelledby="alertInfoModalTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="alertInfoModalTitle">Session ended</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
+        <!-- alert info modal -->
+        <div class="modal fade" id="alertInfoModal" tabindex="-1" role="dialog" aria-labelledby="alertInfoModalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="alertInfoModalTitle">Session ended</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
 
-                            <div class="alert alert-info" role="alert">
-                                You have been logged out. Please login!
-                                <small id="alt" class="form-text text-muted">You will be redirected in few seconds. <a
-                                        href="../index.html">Click here</a> to get started now.</small>
-                            </div>
-
+                        <div class="alert alert-info" role="alert">
+                            You have been logged out. Please login!
+                            <small id="alt" class="form-text text-muted">You will be redirected in few seconds. <a
+                                    href="../index.html">Click here</a> to get started now.</small>
                         </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- BootStrap & JQuery Scripts -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script>
-            function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-            }
-        </script>
+    </div>
+    <!-- BootStrap & JQuery Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 
 </html>
