@@ -38,48 +38,39 @@
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const auth = getAuth();
+        const db = getFirestore(app);
 
-        // listen for current user
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in
-                const uid = user.uid;
-                // ...
-                console.log(uid);
+    // Add an event listener to the button
+    document.getElementById("addEventButton").addEventListener("click", () => {
+        const eventTitle = document.getElementById("eventTitle").value;
+        const eventCategory = document.getElementById("eventCategory").value;
+        const eventDate = document.getElementById("eventDate").value;
+        const eventTime = document.getElementById("eventTime").value;
 
-                var loggedInUser = document.querySelector("#user_email");
-                loggedInUser = user.email;
+        // Create an event object
+        const event = {
+            title: eventTitle,
+            category: eventCategory,
+            date: eventDate,
+            time: eventTime,
+        };
 
-                // ...
-                console.log(loggedInUser);
-
-                $("#userInfoEmail").text(loggedInUser);
-                $("#userCard").show();
-                $("#logoutButton").show();
-            } else {
-                // User is signed out
-                // ...
-                console.log('logged out');
-                // redirect after 3 sec
-                setTimeout(function () {
-
-                    window.location.href = '../index.html';
-                }, 3000);
-            }
-        });
-
-        // logging out
-        const logoutButton = document.querySelector("#logoutButton");
-        logoutButton.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            auth.signOut().then(() => {
-                console.log("user logged out");
-
+        // Create a new collection and add the event data
+        const eventCollection = collection(db, "events"); // "events" is the name of the collection
+        addDoc(eventCollection, event)
+            .then((docRef) => {
+                console.log("Event added with ID: ", docRef.id);
+            })
+            .catch((error) => {
+                console.error("Error adding event: ", error);
             });
 
-        });
+        // Clear input fields
+        document.getElementById("eventTitle").value = "";
+        document.getElementById("eventCategory").value = "";
+        document.getElementById("eventDate").value = "";
+        document.getElementById("eventTime").value = "";
+    });
 
     </script>
 
