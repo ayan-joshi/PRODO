@@ -10,7 +10,7 @@
     <link rel="icon" href="../logo_icon.png" type="image/icon type">
 
     <!-- Font Awesome Icon-->
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,6 +26,7 @@
             // Import functions
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
             import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+            import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js";
     
             // Firebase configuration
             const firebaseConfig = {
@@ -40,61 +41,35 @@
     
             // Initialize Firebase
 
-                const app = initializeApp(firebaseConfig);
-                const auth = getAuth();
-                
-    
-            // listen for current user
-            onAuthStateChanged(auth, (user) => {
-                if (user) {
-                    // User is signed in
-                    const uid = user.uid;
-                    // ...
-                    console.log(uid);
-    
-                    var loggedInUser = document.querySelector("#user_email");
-                    loggedInUser = user.email;
-    
-                    // ...
-                    console.log(loggedInUser);
-    
-                    $("#userInfoEmail").text(loggedInUser);
-                    $("#userCard").show();
-                    $("#logoutButton").show();
-                } else {
-                    // User is signed out
-                    // ...
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide and redirect after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-    
-                        window.location.href = '../index.html';
-                    }, 3000);
-                }
-            });
-    
-            // logging out
-            const logoutButton = document.querySelector("#logoutButton");
-            logoutButton.addEventListener('click', (e) => {
-                e.preventDefault();
-    
-                auth.signOut().then(() => {
-                    console.log("user logged out");
-    
-                    // show alert
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-                    }, 3000);
-    
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth();
+            const db = getFirestore(app);
+
+            const eventsCollection = collection(db, "calendarEvents");
+
+            document.getElementById("addBtn").addEventListener("click", () => {
+                const eventTitle = document.getElementById("eventTitle").value;
+                const eventCategory = document.getElementById("eventCategory").value;
+                const dateInput = document.getElementById("dateInput").value;
+                const timeInput = document.getElementById("timeInput").value;
+
+                const event = {
+                ended: "No",
+                title: eventTitle,
+                category: eventCategory,
+                date: dateInput,
+                time: timeInput,
+                };
+
+                addDoc(eventsCollection, event)
+                .then((docRef) => {
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch((error) => {
+                    console.error("Error adding document: ", error);
                 });
-    
             });
-    
+
         </script>
 </head>
 
