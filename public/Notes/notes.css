@@ -96,11 +96,11 @@ a{
 /* new */
 
 body{
-    background:  rgb(67, 255, 177);
+    background: rgb(32, 140, 95);
   }
   ::selection{
     color: #fff;
-    background:  rgb(67, 255, 177);
+    background:  rgb(32, 140, 95);
   }
   .wrapper{
     margin: 50px;
@@ -130,14 +130,14 @@ body{
   .add-box .icon{
     height: 78px;
     width: 78px;
-    color:  rgb(32, 140, 95);
+    color:  rgb(67, 255, 177);
     font-size: 40px;
     border-radius: 50%;
     justify-content: center;
-    border: 2px dashed  rgb(32, 140, 95);
+    border: 2px dashed  rgb(67, 255, 177);
   }
   .add-box p{
-    color:  rgb(32, 140, 95);
+    color:  rgb(67, 255, 177);
     font-weight: 500;
     margin-top: 20px;
   }
@@ -317,7 +317,7 @@ body{
     cursor: pointer;
     font-size: 17px;
     border-radius: 4px;
-    background: rgb(32, 140, 95);
+    background: rgb(67, 255, 177);
   }
   
   @media (max-width: 660px){
