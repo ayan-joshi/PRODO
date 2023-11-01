@@ -20,79 +20,79 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src=""></script>
 
-        <!-- auth -->
-        <script type="module">
-            // Import functions
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-            import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
-    
-            // Firebase configuration
-            const firebaseConfig = {
-                    apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
-                    authDomain: "student-webdesk.firebaseapp.com",
-                    databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
-                    projectId: "student-webdesk",
-                    storageBucket: "student-webdesk.appspot.com",
-                    messagingSenderId: "594056866812",
-                    appId: "1:594056866812:web:3dd340a4f54dd149f42079"
-                };
-    
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const auth = getAuth();
-    
-            // listen for current user
-            onAuthStateChanged(auth, (user) => {
-                if (user) {
-                    // User is signed in
-                    const uid = user.uid;
-                    // ...
-                    console.log(uid);
-    
-                    var loggedInUser = document.querySelector("#user_email");
-                    loggedInUser = user.email;
-    
-                    // ...
-                    console.log(loggedInUser);
-    
-                    $("#userInfoEmail").text(loggedInUser);
-                    $("#userCard").show();
-                    $("#logoutButton").show();
-                } else {
-                    // User is signed out
-                    // ...
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide and redirect after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-    
-                        window.location.href = '../index.html';
-                    }, 3000);
-                }
+    <!-- auth -->
+    <script type="module">
+        // Import functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
+            authDomain: "student-webdesk.firebaseapp.com",
+            databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
+            projectId: "student-webdesk",
+            storageBucket: "student-webdesk.appspot.com",
+            messagingSenderId: "594056866812",
+            appId: "1:594056866812:web:3dd340a4f54dd149f42079"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+        // listen for current user
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in
+                const uid = user.uid;
+                // ...
+                console.log(uid);
+
+                var loggedInUser = document.querySelector("#user_email");
+                loggedInUser = user.email;
+
+                // ...
+                console.log(loggedInUser);
+
+                $("#userInfoEmail").text(loggedInUser);
+                $("#userCard").show();
+                $("#logoutButton").show();
+            } else {
+                // User is signed out
+                // ...
+                $("#alertInfoModal").modal('show');
+
+                // hide and redirect after 3 sec
+                setTimeout(function () {
+                    $("#alertInfoModal").modal('hide');
+
+                    window.location.href = '../index.html';
+                }, 3000);
+            }
+        });
+
+        // logging out
+        const logoutButton = document.querySelector("#logoutButton");
+        logoutButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            auth.signOut().then(() => {
+                console.log("user logged out");
+
+                // show alert
+                $("#alertInfoModal").modal('show');
+
+                // hide after 3 sec
+                setTimeout(function () {
+                    $("#alertInfoModal").modal('hide');
+                }, 3000);
+
             });
-    
-            // logging out
-            const logoutButton = document.querySelector("#logoutButton");
-            logoutButton.addEventListener('click', (e) => {
-                e.preventDefault();
-    
-                auth.signOut().then(() => {
-                    console.log("user logged out");
-    
-                    // show alert
-                    $("#alertInfoModal").modal('show');
-    
-                    // hide after 3 sec
-                    setTimeout(function () {
-                        $("#alertInfoModal").modal('hide');
-                    }, 3000);
-    
-                });
-    
-            });
-    
-        </script>
+
+        });
+
+    </script>
 </head>
 
 <body>
@@ -104,10 +104,10 @@
             </div>
         </a>
         <div class="menu_bar">
-			<a href="../Dashboard/dashboard.html">
-				<h3 id="menu_dashboard">Dashboard</h3>
-			</a>
-           
+            <a href="../Dashboard/dashboard.html">
+                <h3 id="menu_dashboard">Dashboard</h3>
+            </a>
+
             <a href="../Calendar/calendar.html">
                 <h3 id="menu_calendar">Calendar</h3>
             </a>
@@ -141,116 +141,93 @@
         </div>
 
     </div>
-   
-		<ul class="pricing-list bounce-invert">
-			<li id="basic" class="exclusive">
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" id="one" class="is-visible">
-						<header class="pricing-header">
-							<h2>BASIC</h2>
-                            <hr>
-							<div class="price">
-								<span class="value">FREE</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>Limited</em> Notes</li>
-								<li><em>Basic</em> Calendar</li>
-								<li><em>Simple</em> Pomodoro</li>
-								<li><em>No</em> Music</li>
-								<li><em>Without</em> Kanban Model</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li id="exclusive" class="exclusive">
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" id="two" class="is-visible">
-						<header class="pricing-header">
-							<h2>EXCLUSIVE</h2>
-                            <hr>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">9.99</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>Unlimited</em> Notes Access</li>
-								<li><em>Advanced</em> Calendar</li>
-								<li><em>Advanced</em> Pomodoro</li>
-								<li><em>Music</em> Access</li>
-								<li><em>With</em>Kanban Model</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li id="pro" class="exclusive">
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" id="three" class="is-visible">
-						<header class="pricing-header">
-							<h2>PRO</h2>
-                            <hr>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">4.99</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li><em>Unlimited</em> Noes Access</li>
-								<li><em>Advanced</em> Calendar</li>
-								<li><em>Simple</em> Pomodoro</li>
-								<li><em>No</em> usic</li>
-								<li><em>With</em> Kanban Model</li>
-								<li><em>24/7</em> Support</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-                        
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+    </div>
 
-            <!--
+    <center><h1>PLANS</h1></center>
+
+    <hr>
+
+    <div class="plans">
+        <div class="basic" id="basic">
+            <center>
+                <h2>BASIC</h2>
+            </center>
+            <hr>
+            <center>
+                <h4>FREE</h4>
+            </center>
+            <div class="pricing-body">
+                <ul class="pricing-features">
+                    <li><em>Limited</em> Notes</li>
+                    <li><em>Basic</em> Calendar</li>
+                    <li><em>Simple</em> Pomodoro</li>
+                    <li><em>No</em> Music</li>
+                    <li><em>Without</em> Kanban Model</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
             </div>
-            <div class="right_box"> <img src="productivity.jpg" class="page_image">
+            <center><a href="#"><button class="price-btn">Sign Up</button></a></center>
+        </div>
+
+
+        <div class="exclusive" id="exclusive">
+            <center>
+                <h2>EXCLUSIVE</h2>
+            </center>
+            <hr>
+            <center>
+                <h4>&#8377 100 / MONTH</h4>
+            </center>
+            <div class="pricing-body">
+                <ul class="pricing-features">
+                    <li><em>Unlimited</em> Notes Access</li>
+                    <li><em>Advanced</em> Calendar</li>
+                    <li><em>Advanced</em> Pomodoro</li>
+                    <li><em>Music</em> Access</li>
+                    <li><em>With</em> Kanban Model</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
             </div>
-            -->
-          
+            <center><a href="#"><button class="price-btn">Sign Up</button></a></center>
+        </div>
 
-             <!-- alert info modal -->
-            
 
-        
-        <!-- BootStrap -->
+        <div class="pro" id="pro">
+            <center>
+                <h2>PRO</h2>
+            </center>
+            <hr>
+            <center>
+                <h4>&#8377 70 / MONTH</h4>
+            </center>
+            <div class="pricing-body">
+                <ul class="pricing-features">
+                    <li><em>Unlimited</em> Notes Access</li>
+                    <li><em>Advanced</em> Calendar</li>
+                    <li><em>Simple</em> Pomodoro</li>
+                    <li><em>No</em> Music</li>
+                    <li><em>With</em> Kanban Model</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
+            </div>
+            <center><a href="#"><button class="price-btn">Sign Up</button></a></center>
+        </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+
+
+
+    <!-- BootStrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
