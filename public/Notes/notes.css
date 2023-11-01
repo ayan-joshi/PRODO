@@ -96,11 +96,11 @@ a{
 /* new */
 
 body{
-    background:  rgb(67, 255, 177);
+    background:  white;
   }
   ::selection{
-    color: #fff;
-    background:  rgb(67, 255, 177);
+    color: rgb(67, 255, 177);
+    background:  white;
   }
   .wrapper{
     margin: 50px;
@@ -113,7 +113,7 @@ body{
     list-style: none;
     border-radius: 5px;
     padding: 15px 20px 20px;
-    background: #fff;
+    background: rgb(67, 255, 177);
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
   .add-box, .icon, .bottom-content, 
@@ -130,14 +130,14 @@ body{
   .add-box .icon{
     height: 78px;
     width: 78px;
-    color:  rgb(32, 140, 95);
+    color:  black;
     font-size: 40px;
     border-radius: 50%;
     justify-content: center;
-    border: 2px dashed  rgb(32, 140, 95);
+    border: 2px dashed  black;
   }
   .add-box p{
-    color:  rgb(32, 140, 95);
+    color:  black;
     font-weight: 500;
     margin-top: 20px;
   }
@@ -160,12 +160,12 @@ body{
   }
   .note .details:hover::-webkit-scrollbar-track,
   .popup textarea:hover::-webkit-scrollbar-track{
-    background: #f1f1f1;
+    background: rgb(67, 255, 177);
     border-radius: 25px;
   }
   .note .details:hover::-webkit-scrollbar-thumb,
   .popup textarea:hover::-webkit-scrollbar-thumb{
-    background: #e6e6e6;
+    background: rgb(67, 255, 177);
     border-radius: 25px;
   }
   .note p{
@@ -174,7 +174,7 @@ body{
   }
   .note span{
     display: block;
-    color: #575757;
+    color: black;
     font-size: 16px;
     margin-top: 5px;
   }
@@ -183,14 +183,14 @@ body{
     border-top: 1px solid #ccc;
   }
   .bottom-content span{
-    color: #6D6D6D;
+    color: black;
     font-size: 14px;
   }
   .bottom-content .settings{
     position: relative;
   }
   .bottom-content .settings i{
-    color: #6D6D6D;
+    color: black;
     cursor: pointer;
     font-size: 15px;
   }
@@ -199,7 +199,7 @@ body{
     bottom: 0;
     right: -5px;
     padding: 5px 0;
-    background: #fff;
+    background: rgb(67, 255, 177);
     position: absolute;
     border-radius: 4px;
     transform: scale(0);
