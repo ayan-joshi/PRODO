@@ -165,11 +165,11 @@ a {
 }
 
 .card-content {
-    flex-basis: calc(28.33% - 0px); /* Adjust the width as needed */
+    flex-basis: calc(28.33% + 39px); /* Adjust the width as needed */
     padding: 10px;
     margin-bottom: 10px;
     background-color: #fff;
-    border: 5px double #8b8888;
+    border: 3px double #8b8888;
     border-radius: 5px;
     transition: transform 0.3s ease;
     overflow: hidden;
