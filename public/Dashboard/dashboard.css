@@ -145,7 +145,7 @@ a {
 }
 
 .card-content a{
-    color: aquamarine;
+    color: rgb(255, 255, 255);
 }
 
 .card-content a:hover{
