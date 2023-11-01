@@ -628,7 +628,6 @@ input:checked + .slider:before {
     font-family: 'Fira Code';
     font-size: 18px;
     cursor: pointer;
-	font-weight: 900;
 }
 
 .menu_bar h3:hover {
