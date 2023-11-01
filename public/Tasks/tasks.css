@@ -75,6 +75,7 @@ a {
     font-family: Fira Code;
     font-size: 14px;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .menu_bar h3:hover {
@@ -205,7 +206,7 @@ td {
 body {
     font-family: 'Fira Code';
     margin: 0;
-    background-color: rgba(255, 255, 0, 0.336);
+    background-color: rgb(67, 255, 177);
 }
 
 html {
@@ -221,12 +222,12 @@ html {
 #ourteam {
     margin-bottom: 25px;
     font-size: 3.5rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Fira-Code', Times, serif;
 }
 
 .row {
-    background-color: rgba(255, 0, 0, 0.342);
-    border: 1px solid gray;
+    background-color: rgb(67, 255, 177);
+    border: 1px solid rgb(67, 255, 177);
     padding: 60px;
     margin-bottom: 50px;
 }
@@ -291,7 +292,7 @@ html {
     padding: 50px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: rgba(3, 236, 253, 0.616);
+    background-color: rgb(67, 255, 177);
     color: black;
     border: 2px solid grey;
 }
@@ -340,10 +341,7 @@ html {
     background-color: #04033de5;
 }
 
-footer {
-    background-color: rgb(1, 4, 14);
-    color: rgb(255, 38, 0);
-}
+
 
 .footer {
     display: flex;
@@ -359,7 +357,7 @@ footer {
 
 .footer-first h1 {
     font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Fira-Code', Times, serif;
 }
 
 #github {
