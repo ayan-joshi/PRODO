@@ -1,8 +1,6 @@
 body {
-  background-color: linear-gradient(to bottom, #333333, #66cc66);
-  margin: 0px;
-  /* background-image: url(https://images.unsplash.com/photo-1698414805297-2578132f62fb?auto=format&fit=crop&q=80&w=2129&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
-  background-size: cover;
+  background: url(https://images.unsplash.com/photo-1680097329382-6dbb18edbcaa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
 }
 
 #body_container {
@@ -107,39 +105,36 @@ a {
   /* background-color: aliceblue; can remove this - it's just for visualization */
 }
 
-.right_box {
-  width: 65%;
-  /* height: 500px;*/
-
-  /*background-color: rgb(85,208,156);*/
-}
 
 @media screen and (min-width: 320px) {}
 
 /* to do list styling */
 
 .right_box {
+  width: 65%;
   font-family: 'Fira Code';
   /*min-height: 100vh;*/
   /*display: flex;*/
   justify-content: center;
   align-items: center;
-  background-color: rgba(80, 80, 80, 0.34);
+  /* background-color: rgba(230 139 219 / 77%); */
+  background-color: #dac6fba4;
+  border: 2px solid chocolate;
+  border-radius: 10px;
   box-sizing: border-box;
+  padding: 20px;
 }
 
 #to-do-heading {
-  margin-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   padding: 0px;
     font-size: 15px;
   }
 
 #to-do-heading h2 {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: underline;
+  font-size: 2rem;
 }
 
 .todo-container {
@@ -151,8 +146,8 @@ a {
 
 .status {
   width: 25%;
-  /*background-color: #f3f3f3;*/
-  border-right: 4px solid rgb(243, 243, 243);
+  border-right: 3px solid rgba(255, 255, 255, 0.801);
+  border-radius: 15px;
   position: relative;
   padding: 60px 1rem 0.5rem;
 }
