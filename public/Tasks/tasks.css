@@ -204,9 +204,10 @@ td {
 /* ABOUT US */
 
 body {
+    height: 100vh;
     font-family: 'Fira Code';
     margin: 0;
-    background-color: rgb(67, 255, 177);
+    background-color: #f8785f;
 }
 
 html {
@@ -226,15 +227,25 @@ html {
 }
 
 .row {
-    background-color: rgb(67, 255, 177);
-    border: 1px solid rgb(67, 255, 177);
+    /* background-color: #fdf4a5; */
+    background-image: url(./Images/hehe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
     padding: 60px;
-    margin-bottom: 50px;
+    height: 800px;
+}
+
+#para{
+    margin: 30px 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .column {
     float: inherit;
-    width: 35.3%;
+    width: 22%;
     margin: 16px;
     padding: 0 8px;
 }
@@ -243,56 +254,41 @@ html {
 .card {
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.308);
     margin: 20px;
-}
-
-
-#one {
-    padding: 10px;
     background: linear-gradient(135deg,
-            #000000e7,
-            #c0bebe00);
+    #000000e7,
+    #c0bebe00);
 }
 
-#two {
+
+#one,#two,#three,#four {
     padding: 10px;
-    background: linear-gradient(225deg,
-            #000000e7,
-            #c0bebe00);
+    border: 1px solid gainsboro;
+    background-color: #ffffff15;
 }
-
-#three {
-    padding: 10px;
-    background: linear-gradient(45deg,
-            #000000e7,
-            #c0bebe00);
-}
-
-#four {
-    padding: 10px;
-    background: linear-gradient(315deg,
-            #000000e7,
-            #c0bebe00);
-}
-
 
 .card:hover {
     cursor: pointer;
-    transition: all 0.1s ease-in;
-    border: 6px double black;
+    transition: all 0.2s ease-in;
+    border: 4px double black;
 }
 
 .card:hover h5 {
     color: rgb(13, 0, 85);
     transition: all 0.1s ease-in;
-    font-size: 22;
+    font-size: 1.1rem;
     font-weight: bold;
+}
+
+.card h5{
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .about-section {
     padding: 50px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: rgb(67, 255, 177);
+    background-color: rgb(134, 181, 181);
     color: black;
     border: 2px solid grey;
 }
@@ -302,7 +298,7 @@ html {
     padding: 0 16px;
     background: linear-gradient(315deg,
             #000000b2,
-            #ffffff);
+            #bbbbbb);
 
 }
 
@@ -340,8 +336,6 @@ html {
 .button:hover {
     background-color: #04033de5;
 }
-
-
 
 .footer {
     display: flex;
