@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-size: cover;
+
 }
 .sidebar {
   height: 100vh;
@@ -144,18 +145,20 @@ a{
 /* new */
 
 body{
-    background:  rgb(0, 0, 0);
+    background: url(https://images.unsplash.com/photo-1680097329382-6dbb18edbcaa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-repeat: no-repeat;
   }
   ::selection{
     color: rgb(67, 255, 177);
     background:  white;
   }
-  .wrapper{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .wrapper {
     margin: 50px;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fill, 265px);
+  display: flex;
+    flex-direction: row;
+    /* Change to grid-template-rows */
   }
+  
   .wrapper li{
     height: 250px;
     list-style: none;
@@ -171,6 +174,7 @@ body{
     justify-content: space-between;
   }
   .add-box{
+    margin: 20px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
@@ -190,6 +194,8 @@ body{
     margin-top: 20px;
   }
   .note{
+    width: 200px;
+      margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
