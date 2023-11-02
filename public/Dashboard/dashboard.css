@@ -12,11 +12,11 @@ body{
     position: relative;
     top: 0;
     width: 100%;
-    border-bottom: 4px solid rgb(215, 244, 230);
+    border-bottom: 4px solid black;
     padding-top: 10px;
     padding-bottom: 15px;
     font-size: 10px;
-    background-color: rgba(111, 0, 0, 0.493);
+    background-color: black;
     display: flex;
     align-items: center;
 
@@ -40,6 +40,7 @@ a {
     padding: 0px;
     width: 50px;
     height: 50px;
+    color: white;
 }
 
 #web_app_name {
@@ -48,6 +49,7 @@ a {
     font-size: 25px;
     font-family: 'Fira Code';
     font-weight: bold;
+    color: white;
 }
 
 .menu_icon {
