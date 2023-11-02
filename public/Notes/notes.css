@@ -178,6 +178,7 @@ body{
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
+    width: 250px;
   }
   .add-box .icon{
     height: 78px;
@@ -194,7 +195,7 @@ body{
     margin-top: 20px;
   }
   .note{
-    width: 200px;
+    width: 250px;
       margin: 20px;
     display: flex;
     flex-direction: column;
