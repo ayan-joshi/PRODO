@@ -1,16 +1,20 @@
 html {
-    font-family: 'Abel';
+    font-family: 'Fira Code';
   }
   
   .pageTitle {
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
-    font-family: "Domine" !important;
+    font-family: "Fira Code" !important;
   }
   
   .form-group {
     width: 290px;
+    padding-top: 20px;
+    height: 50px;
+
+
   }
   
   .formInner {
@@ -44,17 +48,19 @@ html {
   }
   
   .form-control {
-    border: 3px solid #FFFFFF !important;
-    box-shadow: 0 2px 8px #dddddd !important;
-    font-family: 'Abel';
+    border: 20px solid #FFFFFF !important;
+    box-shadow: 0 2px 2px #dddddd !important;
+    font-family: 'Fira Code';
+    font-weight: 500;
+    
   }
   
   .form-control:hover {
-    box-shadow: 0 2px 4px #dddddd;
+    box-shadow: 0 20px 20px #dddddd;
   }
   
   .form-control:focus {
-    box-shadow: 0 2px 4px #dddddd !important;
+    box-shadow: 0 20px 20px #dddddd !important;
     border: 3px solid #1CC48B !important;
   }
   
