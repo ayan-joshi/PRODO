@@ -1,6 +1,10 @@
+
+
 calendarMain();
 
 function calendarMain() {
+
+  
   const DEFAULT_OPTION = "Choose category";
 
   let inputElem,
@@ -35,17 +39,36 @@ function calendarMain() {
   }
 
   function addEntry(event) {
-
+    console.log("this funtion ran");
     let inputValue = inputElem.value;
+    let inputValue2 = inputElem2.value;
+    let dateValue = dateInput.value;
+    let timeValue = timeInput.value;
+
+
+
+    const command = {
+      ended: "No",
+      title: inputValue,
+      category: inputValue2,
+      date: dateValue,
+      time: timeValue,
+      };
+
+      addDoc(eventsCollection, command)
+      .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+          console.error("Error adding document: ", error);
+      });
+
     inputElem.value = "";
 
-    let inputValue2 = inputElem2.value;
     inputElem2.value = "";
 
-    let dateValue = dateInput.value;
     dateInput.value = "";
 
-    let timeValue = timeInput.value;
     timeInput.value = "";
 
     let obj = {

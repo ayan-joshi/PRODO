@@ -1,6 +1,7 @@
 body {
+  background-color: linear-gradient(to bottom, #333333, #66cc66);
   margin: 0px;
-  background-image: url(https://images.unsplash.com/photo-1698414805297-2578132f62fb?auto=format&fit=crop&q=80&w=2129&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-image: url(https://images.unsplash.com/photo-1698414805297-2578132f62fb?auto=format&fit=crop&q=80&w=2129&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
   background-size: cover;
 }
 
