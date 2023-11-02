@@ -195,41 +195,41 @@
 
                 <div class="container-fluid padding margins right-main">
                     <div class="row">
-
-            <div class="col-sm-8">
-            
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3>Calendar Events</h3>
-                    </div>
-
-                    <!-- Button triggers add event modal -->
-                    <div class="col-sm-4">
-                        <div class="text-right">
-                            <button id="addEventButton" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#addEventModal">
-                                Add event
-                            </button>
+                        <div class="cal-main">
+                            <div class="col-sm-8">
+                        
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h3>Calendar Events</h3>
+                                    </div>
+                        
+                                    <!-- Button triggers add event modal -->
+                                    <div class="col-sm-4">
+                                        <div class="text-right">
+                                            <button id="addEventButton" type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#addEventModal">
+                                                Add event
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <table class="table table-hover" id="eventTable">
+                                    <tr>
+                                        <th scope="col">Ended</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Time</th>
+                                        <th scope="col">
+                                            <select id="categoryFilter">
+                                            </select>
+                                        </th>
+                                        <th scope="col">Discard</th>
+                                    </tr>
+                                </table>
+                        
+                            </div>
                         </div>
-                    </div>
-                    </div>
-
-                <table class="table table-hover" id="eventTable">
-                    <tr>
-                        <th scope="col">Ended</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">
-                            <select id="categoryFilter">
-                            </select>
-                        </th>
-                        <th scope="col">Discard</th>
-                    </tr>
-                </table>
-
-            </div>
-
 
 
 
