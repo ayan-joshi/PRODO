@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
 }
 
 .header {
@@ -62,6 +62,11 @@ a {
     height: 5px;
     background-color: black;
     margin: 6px 0;
+}
+svg {
+    height: 100px;
+    margin-top: 20px;
+
 }
 
 .menu_bar {
@@ -146,30 +151,26 @@ a {
     object-fit: fill;
 }
 
-.content_image {
-    border: 2px solid rgba(0, 0, 0, 0.74);
-    border-radius: 10px;
-    width: 240px;
-    height: 240px;
-    margin: 10px;
-    object-fit: fil;
-}
+
 
 
 .cards-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     padding: 50px;
     padding-top: 0px;
 }
 
 .card-content {
-    flex-basis: calc(28.33% + 39px); /* Adjust the width as needed */
+
     padding: 10px;
-    margin-bottom: 10px;
+
     background-color: #fff;
-    border: 3px double #8b8888;
+    height: 300px;
+        margin: 5px;
+        width: 300px;
     border-radius: 5px;
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -177,6 +178,50 @@ a {
 
 .card-content:hover {
     transform: scale(1.03);
+}
+.first-cards,
+.second-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.calendar {
+    background-color: #009c53;
+}
+
+.todo {
+    background-color: #dac6fb;
+}
+
+.timer {
+    background-color: #ff6e51;
+}
+
+.about-us {
+    background-color: rgb(204, 162, 107);
+}
+
+.pricing {
+    background-color: rgb(134, 181, 181);
+}
+
+#message {
+    color: white;
+    font-size: 50px;
+}
+
+#quote {
+    color: rgb(173, 173, 173);
+    font-size: 30px;
+}
+
+.upper-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 @media screen and (min-width: 320px) {}
