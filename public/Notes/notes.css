@@ -215,12 +215,12 @@ body{
   }
   .note .details:hover::-webkit-scrollbar-track,
   .popup textarea:hover::-webkit-scrollbar-track{
-    background: rgb(67, 255, 177);
+    background: #dac6fb;
     border-radius: 25px;
   }
   .note .details:hover::-webkit-scrollbar-thumb,
   .popup textarea:hover::-webkit-scrollbar-thumb{
-    background: rgb(67, 255, 177);
+    background: #dac6fb;
     border-radius: 25px;
   }
   .note p{
@@ -254,12 +254,12 @@ body{
     bottom: 0;
     right: -5px;
     padding: 5px 0;
-    background: rgb(67, 255, 177);
+    background: black;
     position: absolute;
-    border-radius: 4px;
+    border-radius: 2px;
     transform: scale(0);
     transform-origin: bottom right;
-    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
     transition: transform 0.2s ease;
   }
   .settings.show .menu{
@@ -372,7 +372,7 @@ body{
     cursor: pointer;
     font-size: 17px;
     border-radius: 4px;
-    background: rgb(32, 140, 95);
+    background: rgb(186, 69, 180);
   }
   
   
