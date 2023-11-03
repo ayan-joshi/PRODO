@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -45,47 +45,6 @@ a {
   font-weight: bold;
 }
 
-
-.menu_icon {
-
-  margin-right: 50px;
-
-  cursor: pointer;
-  position: absolute;
-  bottom: 660px;
-  left: 1450px;
-}
-
-.menu_icon div {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-
-}
-
-.menu_bar {
-  margin-top: 8px;
-}
-
-.menu_bar h3 {
-  display: inline;
-  margin-right: 30px;
-
-  font-family: 'Fira Code';
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.menu_bar h3:hover {
-  /* text-decoration: underline; */
-  border-bottom: 3px solid black;
-}
-
-#menu_todo {
-  border-bottom: 3px solid black;
-}
-
 .content_pane {
   margin: auto;
   margin-top: 70px;
@@ -116,7 +75,7 @@ a {
 /* to do list styling */
 
 .right_box {
-  width: 65%;
+  width: 80%;
   font-family: 'Fira Code';
   /*min-height: 100vh;*/
   /*display: flex;*/
@@ -124,14 +83,13 @@ a {
   align-items: center;
   /* background-color: rgba(230 139 219 / 77%); */
   background-color: #b993f5a4;
-  border: 1px solid chocolate;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px;
 }
 
 #to-do-heading {
-  margin-left: 50px;
+  margin-left: 225px;
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0px;
