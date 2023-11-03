@@ -46,10 +46,28 @@
             const app = initializeApp(firebaseConfig);
             const db = getFirestore(app);
 
-            const eventCollection = collection(db, "notes");
+            const noteCollection = collection(db, "notes");
 
+            document.getElementById("addBtn.innerHTML").addEventListener("click", () => {
+                const notesTitle = document.getElementById("notes_title").value;
+                const notesInput = document.getElementById("notes_input").value;
 
+                const note = {
+                    title: notesTitle,
+                    input: notesInput,
+                };
 
+                addDoc(noteCollection, note)
+                    .then((docRef) => {
+                        console.log("Task added with ID: ", docRef.id);
+                    })
+                    .catch((error) => {
+                        console.error("Error adding task: ", error);
+                    });
+
+                document.getElementById("notes_title").value = "";
+                document.getElementById("notes_input").value = "";
+            });
 
         </script>
     </head>
@@ -156,7 +174,7 @@
                     <label>Description</label>
                     <textarea spellcheck="false" id="notes_input"></textarea>
                 </div>
-                <!-- <button></button> this is the button -->
+                <button></button>
                 </form>
                 </div>
                 </div>
