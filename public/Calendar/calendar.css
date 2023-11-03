@@ -1,59 +1,61 @@
-body{
+body {
     margin: 0px;
     background-size: cover;
 }
 
-#body_container{
+#body_container {
     margin: 0px;
     height: 100%;
 
 }
+
 .modal-content {
     background-color: gray;
 }
 
-.header{
-    
-    border-bottom: 4px solid rgb(215,244,230);
+.header {
+
+    border-bottom: 4px solid rgb(215, 244, 230);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 15px;
-    
+
     font-size: 10px;
     background-color: rgb(255, 255, 255);
 
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 }
 
-.menu_icon{
+.menu_icon {
 
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-.logo_box{
+.logo_box {
     margin-left: 20px;
     margin-right: 220px;
     width: fit-content;
 
     display: flex;
-    align-items:center; /* vertical align*/
+    align-items: center;
+    /* vertical align*/
 }
 
-.logo_box img{
+.logo_box img {
     margin: 8px 0px 0px 0px;
     padding: 0px;
     width: 50px;
     height: 50px;
 }
 
-#web_app_name{
+#web_app_name {
     margin: 8px 0px 0px 5px;
     padding: 0px;
     font-size: 25px;
@@ -63,7 +65,7 @@ a{
 
 
 
-.menu_icon div{
+.menu_icon div {
     width: 35px;
     height: 5px;
     background-color: black;
@@ -75,7 +77,8 @@ a{
     margin-top: 8px;
     align-content: center;
 }
-.menu_bar h3{
+
+.menu_bar h3 {
     display: inline;
     margin-right: 22px;
 
@@ -85,52 +88,55 @@ a{
     font-weight: 900;
 }
 
-.menu_bar h3:hover{
+.menu_bar h3:hover {
     /* text-decoration: underline; */
     border-bottom: 3px solid black;
 }
 
-#menu_calendar{
+#menu_calendar {
     border-bottom: 3px solid black;
 }
 
-.content_pane{
+.content_pane {
     margin: auto;
     margin-top: 70px;
-    /* border: 1px solid red; */ /* i use borders to see where the html elements are before I position them */
+    /* border: 1px solid red; */
+    /* i use borders to see where the html elements are before I position them */
     width: 99%;
     font-family: 'Fira Code';
     font-weight: bold;
     display: flex;
 }
 
-.left_panel{
+.left_panel {
     object-fit: contain;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 40%;
     height: 50vh;
-    background-color: rgb(85,208,156);
+    background-color: rgb(85, 208, 156);
     border: 1px solid black;
     box-shadow: 4px 6px lightgray;
 }
 
-.left_panel input{
+.left_panel input {
 
     width: 100%;
 }
 
 .strike {
     text-decoration: line-through;
-  }
+}
+
 tr {
     background-color: #ff6e51;
 }
-td{
+
+td {
     width: 150px;
     max-width: 150px;
     object-fit: contain;
@@ -139,38 +145,39 @@ td{
     background-color: lightgray;
     */
     padding: 5px;
-  }
+}
 
-.left_panel h2{
+.left_panel h2 {
 
     border-bottom: 3px solid black;
 }
 
-.right_panel{
+.right_panel {
     object-fit: contain;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     height: fit-content;
-    background-color: rgb(85,208,156);
+    background-color: rgb(85, 208, 156);
     border: 1px solid black;
     box-shadow: 4px 6px lightgray;
 }
 
-.right_panel h2{
+.right_panel h2 {
 
     border-bottom: 3px solid black;
 }
 
 
-.page_image{
+.page_image {
     width: 95%;
     height: 87%;
 
-    background-color: aliceblue; /* can remove this - it's just for visualization */
+    background-color: aliceblue;
+    /* can remove this - it's just for visualization */
 }
 
 
@@ -179,26 +186,34 @@ td{
     padding-left: 100px;
     padding-right: 100px;
 }
+
 .right-main {
-    background: url(https://images.unsplash.com/photo-1680097329382-6dbb18edbcaa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
     color: white;
     padding-top: 200px;
     padding-left: 500px;
 
 }
+
 .cal-main {
-    background-color: #0000009c;
+    background-color: #000000a4;
     padding: 30px;
     height: 500px;
     width: 800px;
     display: flex;
+    border: 1px solid black;
     border-radius: 20px;
     justify-content: center;
 }
+
 th {
     color: rgb(0, 0, 0);
 }
+
 .bg-image {
     background-image: url("../Dashboard/content images/calendar.jpg");
     background-size: cover;
@@ -206,59 +221,57 @@ th {
     margin-top: 0px;
     width: 100%;
     min-height: 600px;
-  }
-  /* Sidebar styles */
-  .sidebar {
-      height: 100vh;
-
-      /* Adjust the width as needed */
-      background-color: #333;
-      /* Sidebar background color */
-      color: white;
-      /* Text color */
-      padding: 5px;
-      /* Add padding for better appearance */
-  }
-
-  .sidebar svg {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 40px;
-      color: white;
-  }
-
-  .sidebar ul {
-      list-style: none;
-      padding: 0;
-  }
-
-  .sidebar li {
-      margin-bottom: 10px;
-      margin-top: 10px;
-  }
-
-  .sidebar ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .sidebar a {
-      text-decoration: none;
-      color: white;
-  }
-
-  .main {
-      display: flex;
-      flex-direction: row;
-  }
-
-@media screen and (min-width: 320px) {
-   
-
 }
+
+/* Sidebar styles */
+.sidebar {
+    height: 100vh;
+
+    /* Adjust the width as needed */
+    background-color: #333;
+    /* Sidebar background color */
+    color: white;
+    /* Text color */
+    padding: 5px;
+    /* Add padding for better appearance */
+}
+
+.sidebar svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 320px) {}
