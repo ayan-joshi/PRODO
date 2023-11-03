@@ -29,7 +29,6 @@
             // Import functions
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
             import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
-            import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js";
 
             // Firebase configuration
             const firebaseConfig = {
@@ -44,29 +43,57 @@
 
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
+            const auth = getAuth();
 
-            const noteCollection = collection(db, "notes");
+            // listen for current user
+            onAuthStateChanged(auth, (user) => {
+                if (user) {
+                    // User is signed in
+                    const uid = user.uid;
+                    // ...
+                    console.log(uid);
 
-            document.getElementById("addBtn.innerHTML").addEventListener("click", () => {
-                const notesTitle = document.getElementById("notes_title").value;
-                const notesInput = document.getElementById("notes_input").value;
+                    var loggedInUser = document.querySelector("#user_email");
+                    loggedInUser = user.email;
 
-                const note = {
-                    title: notesTitle,
-                    input: notesInput,
-                };
+                    // ...
+                    console.log(loggedInUser);
 
-                addDoc(noteCollection, note)
-                    .then((docRef) => {
-                        console.log("Task added with ID: ", docRef.id);
-                    })
-                    .catch((error) => {
-                        console.error("Error adding task: ", error);
-                    });
+                    $("#userInfoEmail").text(loggedInUser);
+                    $("#userCard").show();
+                    $("#logoutButton").show();
+                } else {
+                    // User is signed out
+                    // ...
+                    $("#alertInfoModal").modal('show');
 
-                document.getElementById("notes_title").value = "";
-                document.getElementById("notes_input").value = "";
+                    // hide and redirect after 3 sec
+                    setTimeout(function () {
+                        $("#alertInfoModal").modal('hide');
+
+                        window.location.href = '../index.html';
+                    }, 3000);
+                }
+            });
+
+            // logging out
+            const logoutButton = document.querySelector("#logoutButton");
+            logoutButton.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                auth.signOut().then(() => {
+                    console.log("user logged out");
+
+                    // show alert
+                    $("#alertInfoModal").modal('show');
+
+                    // hide after 3 sec
+                    setTimeout(function () {
+                        $("#alertInfoModal").modal('hide');
+                    }, 3000);
+
+                });
+
             });
 
         </script>
@@ -168,11 +195,11 @@
             <form action="#">
                 <div class="row title">
                     <label>Title</label>
-                    <input type="text" spellcheck="false" id="notes_title">
+                    <input type="text" spellcheck="false">
                 </div>
                 <div class="row description">
                     <label>Description</label>
-                    <textarea spellcheck="false" id="notes_input"></textarea>
+                    <textarea spellcheck="false"></textarea>
                 </div>
                 <button></button>
                 </form>
