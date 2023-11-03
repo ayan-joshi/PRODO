@@ -228,7 +228,7 @@ html {
 
 .row {
     /* background-color: #fdf4a5; */
-    background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -269,7 +269,7 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
-    background-color: #f38cf350;
+    background-color: #68686850;
 }
 
 .card:hover {
