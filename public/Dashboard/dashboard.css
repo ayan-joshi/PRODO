@@ -230,10 +230,10 @@ svg {
 
 /* Sidebar styles */
 .sidebar {
-    height: 100vh;
+    height: 120vh;
 
     /* Adjust the width as needed */
-    background-color: #333;
+    background-color: rgba(128, 128, 128, 0.255);
     /* Sidebar background color */
     color: white;
     /* Text color */

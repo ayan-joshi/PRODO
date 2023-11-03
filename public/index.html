@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PRODO</title>
   <!-- title bar icon -->
-  <link rel="icon" href="logo_icon.png" type="image/icon type">
+  <!-- <link rel="icon" href="logo_icon.png" type="image/icon type"> -->
 
   <!-- BootStrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -41,7 +41,6 @@
   <div class="header">
     <a href="../NewTab/newtab.html">
       <div class="logo_box">
-        <img src="logo_icon.png">
         <h1 id="web_app_name">PRODO</h1>
       </div>
     </a>
@@ -179,7 +178,7 @@
                       <div class="alert alert-info" role="alert">
                         You account has been successfully created!
                         <small id="alt" class="form-text text-muted">You will be redirected in few seconds. <a
-                            href="NewTab/newtab.html">Click here</a> to get started now.</small>
+                            href="Dashboard/dashboard.html">Click here</a> to get started now.</small>
                       </div>
 
                     </div>
@@ -203,7 +202,7 @@
                       <div class="alert alert-success" role="alert">
                         You have been successfully logged in!
                         <small id="alt" class="form-text text-muted">You will be redirected in few seconds. <a
-                            href="NewTab/newtab.html">Click here</a> to get started now.</small>
+                            href="Dashboard/dashboard.html">Click here</a> to get started now.</small>
                       </div>
 
                     </div>
@@ -298,7 +297,7 @@
         setTimeout(function () {
           $("#alertInfoModal2").modal('hide');
 
-          window.location.href = '/public/Newtab/newtab.html';
+          window.location.href = '/public/Dashboard/dashboard.html';
         }, 3000);
 
       } else {
@@ -347,7 +346,7 @@ signupForm.addEventListener('submit', async (e) => {
 
     // Redirect after 3 seconds
     setTimeout(function () {
-      window.location.href = '/public/Newtab/newtab.html';
+      window.location.href = '/public/Dashboard/dashboard.html';
     }, 3000);
   } catch (error) {
     // Handle errors
@@ -393,7 +392,7 @@ signupForm.addEventListener('submit', async (e) => {
 
         // redirect after 3 sec
         setTimeout(function () {
-          window.location.href = '/NewTab/newtab.html';
+          window.location.href = '/Dashboard/dashboard.html';
         }, 3000);
 
       }).catch((error) => {
