@@ -108,9 +108,6 @@ a{
     font-weight: bold;
 }
 
-#logo{
-
-}
 
 .menu_icon div{
     width: 35px;
@@ -145,8 +142,11 @@ a{
 /* new */
 
 body{
-    background: url(https://images.unsplash.com/photo-1680097329382-6dbb18edbcaa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-      background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
   }
   ::selection{
     color: rgb(67, 255, 177);
@@ -163,9 +163,10 @@ body{
   .wrapper li{
     height: 250px;
     list-style: none;
-    border-radius: 5px;
+    border-radius: 7px;
+    border: 1px solid black;
     padding: 15px 20px 20px;
-    background: #dac6fb;
+    background: #dac6fbde;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
   .add-box, .icon, .bottom-content, 

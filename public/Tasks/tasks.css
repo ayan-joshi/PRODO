@@ -228,9 +228,10 @@ html {
 
 .row {
     /* background-color: #fdf4a5; */
-  background: url(https://images.unsplash.com/photo-1680097329382-6dbb18edbcaa?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
     border: 1px solid black;
     padding: 60px;
     margin: 10px;
@@ -255,9 +256,11 @@ html {
 .card {
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.308);
     margin: 20px;
-    background: linear-gradient(135deg,
-    #000000e7,
-    #c0bebe00);
+    border: 1px solid black;
+    border-radius: 6px;
+    background: linear-gradient(315deg,
+            #222222,
+            #d3d2d2);
 }
 
 
@@ -266,13 +269,14 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
-    background-color: #ffffff15;
+    background-color: #f38cf350;
 }
 
 .card:hover {
     cursor: pointer;
     transition: all 0.2s ease-in;
-    border: 4px solid black;
+    border: 3px solid black;
+    border-radius: 8px;
 }
 
 .card h5{
@@ -297,11 +301,12 @@ html {
 }
 
 .container {
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 16px;
+    border-radius: 6px;
     background: linear-gradient(315deg,
-            #000000b2,
-            #bbbbbb);
+            #222222,
+            #d3d2d2);
 
 }
 
@@ -316,7 +321,7 @@ html {
 
 .card img {
     margin-top: 7%;
-    border: 2px solid rgb(80, 79, 79);
+    border: 2px solid rgb(43, 42, 42);
     height: 260px;
 }
 
