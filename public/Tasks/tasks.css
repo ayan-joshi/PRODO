@@ -158,7 +158,7 @@ td {
 .page_image {
     width: 95%;
     height: 87%;
-    background-color: aliceblue;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     /* can remove this - it's just for visualization */
 }
 
@@ -171,14 +171,7 @@ td {
     padding-right: 100px;
 }
 
-.bg-image {
-    background-image: url("../Dashboard/content images/calendar.jpg");
-    background-size: cover;
-    background-position: top;
-    margin-top: 0px;
-    width: 100%;
-    min-height: 600px;
-}
+
 
 .page_image {
     width: 500px;
@@ -205,9 +198,10 @@ td {
 
 body {
     height: 100vh;
-    font-family: 'Fira Code';
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
     margin: 0;
-    background-color: #f8785f;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 html {
@@ -223,12 +217,12 @@ html {
 #ourteam {
     margin-bottom: 25px;
     font-size: 3.5rem;
-    font-family: 'Fira-Code', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .row {
     /* background-color: #fdf4a5; */
-    background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -269,7 +263,11 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
-    background-color: #f38cf350;
+<<<<<<< HEAD
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+=======
+    background-color: #68686850;
+>>>>>>> 478a74aa1927b6848257bc1369d9e391f95443bd
 }
 
 .card:hover {
@@ -295,9 +293,9 @@ html {
     padding: 50px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: rgb(134, 181, 181);
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     color: black;
-    border: 2px solid grey;
+    color: white;
 }
 
 .container {
@@ -365,7 +363,7 @@ html {
 } */
 
 #github {
-    color: #00ffd5;
+    color: white;
     font-size: small;
     margin: 0 5px;
     padding: 5px;
@@ -377,7 +375,7 @@ html {
 }
 
 #last{
-    color: #f8785f;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 #lasthr{

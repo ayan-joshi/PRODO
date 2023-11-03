@@ -166,7 +166,7 @@ body{
     border-radius: 7px;
     border: 1px solid black;
     padding: 15px 20px 20px;
-    background: #dac6fbde;
+    background: rgb(227, 222, 222);
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
   .add-box, .icon, .bottom-content, 
@@ -374,7 +374,7 @@ body{
     cursor: pointer;
     font-size: 17px;
     border-radius: 4px;
-    background: rgb(186, 69, 180);
+    background: rgb(122, 119, 119);
   }
   
   

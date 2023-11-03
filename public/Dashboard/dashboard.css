@@ -4,7 +4,7 @@
 }
 
 body{
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 .header {
@@ -158,10 +158,11 @@ svg {
 
 
 .cards-container {
+    margin-top: 3%;
     display: flex;
+    width: 100vw;
     align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+    flex-direction: column;
     padding: 50px;
     padding-top: 0px;
 }
@@ -220,6 +221,7 @@ svg {
 
 .upper-container {
     margin: 20px;
+    margin-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: center;

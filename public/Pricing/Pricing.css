@@ -164,25 +164,6 @@ td {
     padding-right: 100px;
 }
 
-.bg-image {
-    background-image: url("../Dashboard/content images/calendar.jpg");
-    background-size: cover;
-    background-position: top;
-    margin-top: 0px;
-    width: 100%;
-    min-height: 600px;
-}
-
-.page_image {  
-    width: 500px;
-    height: 500px;
-    margin-left: 70px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 50px;
-    object-fit: fill;
-}
-
 @media screen and (min-width: 320px) {
 }
 
@@ -217,7 +198,7 @@ footer, header, hgroup, menu, nav, section, main {
 }
 body {
 	line-height: 1;
-  background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -257,9 +238,9 @@ html * {
 
 body {
 	font-size: 1.6rem;
-	font-family: "Open Sans", sans-serif;
-	color: #2d3d4f;
-	background-color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	color: white;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 a {
@@ -315,7 +296,7 @@ a {
 	left: 2px;
 	height: 40px;
 	width: 90px;
-	background-color: #2d3e50;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 	border-radius: 50em;
 	-webkit-transition: -webkit-transform 0.5s;
 	-moz-transition: -moz-transform 0.5s;
@@ -459,7 +440,7 @@ a {
     transform: translateY(-50%);
     height: 50%;
     width: 1px;
-    background-color: #b1d6e8;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   }
   .pricing-wrapper > li::after {
     display: none;
@@ -499,45 +480,47 @@ a {
   }
 }
 
-.pricing-header h2 {
+/* .pricing-header h2 {
+  color: white;
 	padding: 0.9em 0.9em 0.6em;
     font-weight: 400;
     margin-bottom: 30px;
     margin-top: 10px;
     text-transform: uppercase;
 	text-align: center;
-}
+} */
 
 .pricing-header {
     height: auto;
     padding: 1.9em 0 1.6em;
     pointer-events: auto;
     text-align: center;
-    color: #173d50;
-    background-color: transparent;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    color: white;
 }
 
 .exclusive .pricing-header {
-    color: #1bbc9d;
-    background-color: transparent;
+    color: white;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 .pricing-header h2 {
     font-size: 2.8rem;
     letter-spacing: 2px;
+    color: wheat;
 }
 
 .currency,
 .value {
 	font-size: 3rem;
 	font-weight: 300;
-  color: black;
+  color: white;
 }
 
 .duration {
 	font-weight: 700;
 	font-size: 1.3rem;
-	color: #8dc8e4;
+  color: white;
 	text-transform: uppercase;
 }
 
@@ -557,12 +540,12 @@ a {
 
 .currency, 
 .duration {
-    color: #1bbc9d;
+    color: white;
 }
 
 .exclusive .currency,
 .exclusive .duration {
-    color: #2d3e50;
+    color: white;
 }
 
 .currency {
@@ -571,6 +554,8 @@ a {
     vertical-align: top;
     font-size: 2rem;
     font-weight: 700;
+    color: white;
+    
 }
 
 .duration {
@@ -580,6 +565,8 @@ a {
 .pricing-body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  color: white;
 }
 
 .is-switched .pricing-body {
@@ -647,6 +634,8 @@ a {
 	left: 0;
 	height: 80px;
 	width: 100%;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  
 }
 
 .pricing-footer {
@@ -680,9 +669,9 @@ a {
     display: inline-block;
     height: auto;
     padding: 1.3em 2em;
-    color: #1bbc9d;
+    background: linear-gradient(109.6deg, rgba(216, 212, 212, 0) 11.2%, rgb(63, 61, 61) 78.9%);
+    color: white;
     border-radius: 8px;
-    border: 2px solid #1bbc9d;
     font-size: 1.4rem;
     text-indent: 0;
     text-transform: uppercase;
@@ -692,12 +681,12 @@ a {
 }
 
 .no-touch .select:hover {
-    background-color: #1bbc9d;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.115) 11.2%, rgb(111, 106, 106) 78.9%);
 	color: #ffffff;
 }
 
 .exclusive .select {
-    background-color: #1bbc9d;
+  background: linear-gradient(109.6deg, rgba(139, 135, 135, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 	color: #ffffff;
 }
   
@@ -753,13 +742,13 @@ a {
 
 #one h2,#three h2{
   font-weight: 700;
-  color: #000;
+  color: white;
 }
 
 
 #two h2{
   font-weight: 800;
-  color: #000;
+  color: white;
 }
 
 .select{
