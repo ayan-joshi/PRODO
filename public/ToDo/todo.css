@@ -1,11 +1,10 @@
 body {
+  background-image: url(https://images.unsplash.com/photo-1489861518096-4d12b732e831?auto=format&fit=crop&q=80&w=2136&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
   margin: 0;
-  background-color: #722be4a4;
-
 }
 
 #body_container {
@@ -117,24 +116,26 @@ a {
 /* to do list styling */
 
 .right_box {
-  width: 80%;
+  width: 65%;
   font-family: 'Fira Code';
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
+  /* background-color: rgba(230 139 219 / 77%); */
   background-color: #b993f5a4;
+  border: 1px solid chocolate;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px;
 }
 
 #to-do-heading {
-  margin-left: 275px;
+  margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0px;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 15px;
 }
 
 #to-do-heading h2 {
@@ -164,6 +165,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  /*background-color: #343434;*/
   color: #000000;
   margin: 0;
   width: 100%;
@@ -177,6 +179,7 @@ a {
   padding: 0.5rem 1rem;
   background-color: rgb(255, 255, 255);
   outline: none;
+  border: 2px solid rgb(32, 140, 95);
   width: 100%;
   font-size: 1.1rem;
   font-family: 'Fira Code';
@@ -185,7 +188,7 @@ a {
 }
 
 #add_btn:hover {
-  background-color: #a77ee9a4;
+  background-color: rgb(175, 251, 219);
 }
 
 .todo {
@@ -198,7 +201,7 @@ a {
     rgba(15, 15, 15, 0.1) 0px 2px 4px;
   border-radius: 25px;
   padding: 0.5rem 1rem;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0.5rem 0;
 }
 
@@ -334,7 +337,7 @@ a {
 }
 
 #todo_submit {
-  background-color: #b993f5a4;
+  background-color: rgb(36, 238, 154);
   color: #191919;
   font-size: 1rem;
   font-family: 'Fira Code';
@@ -363,7 +366,7 @@ a {
 
 .sidebar {
   height: 100vh;
-  background-color: #8349dfa4;
+  background-color: #333;
   /* Sidebar background color */
   color: white;
   /* Text color */
