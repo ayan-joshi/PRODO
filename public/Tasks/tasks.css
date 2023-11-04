@@ -14,7 +14,7 @@ body {
     padding-bottom: 15px;
     padding-right: 15px;
     font-size: 10px;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,8 +48,10 @@ a {
 #web_app_name {
     margin: 8px 0px 0px 5px;
     padding: 0px;
-    font-size: 25px;
-    font-family: 'Fira Code';
+    padding-left: 635px;
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -264,7 +266,11 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
+<<<<<<< HEAD
     background-color: #f38cf350;
+=======
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+>>>>>>> f9f58c347ffbf7747f7b178d2451d7b50379343a
 }
 
 .card:hover {

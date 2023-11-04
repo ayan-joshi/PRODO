@@ -13,7 +13,7 @@ body {
     padding-bottom: 15px;
     padding-right: 15px;
     font-size: 10px;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,9 +46,11 @@ a {
 #web_app_name {
     margin: 8px 0px 0px 5px;
     padding: 0px;
-    font-size: 25px;
-    font-family: 'Fira Code';
+    font-size: 50px;
+    padding-left: 600px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 
