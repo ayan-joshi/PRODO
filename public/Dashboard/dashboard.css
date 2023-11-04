@@ -321,7 +321,7 @@ svg {
 
 .wrapper .icon{
     position: relative;
-    background-color: #222222;
+    background-color: #181717;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -342,10 +342,10 @@ svg {
     top: 10px;
     left: 80px;
     font-size: 14px;
-    background: #ffffff;
+    background-color: rgb(29, 28, 28);
     color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 8px;
     box-shadow: 0 10px 10px black;
     opacity: 0;
     pointer-events: none;
@@ -357,7 +357,7 @@ svg {
     content: "";
     height: 8px;
     width: 8px;
-    background-color: #ffffff;
+    background-color: rgb(29, 28, 28);
     top: 50%;
     left: 0;
     transform: translate(-50%) rotate(45deg);
