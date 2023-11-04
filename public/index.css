@@ -151,6 +151,7 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
     font-size: 10em;
+    font-weight: 800;
     opacity: 1;
 }
 
@@ -160,7 +161,7 @@ body {
     top: 0;
     left: 0;
     transform: rotateX(180deg);
-    line-height: 0.89em;
+    line-height: 0.97em;
     transform-origin: bottom;
     background: linear-gradient(0deg, #fff 0, transparent 80%);
     -webkit-background-clip: text;
