@@ -141,11 +141,13 @@ td {
     width: 150px;
     max-width: 150px;
     object-fit: contain;
+    font-size: 16px;
+    font-weight: bolder;
     /*
     border: 1px solid white;
     background-color: lightgray;
     */
-    padding: 5px;
+    padding: 20px;
 }
 
 .left_panel h2 {
