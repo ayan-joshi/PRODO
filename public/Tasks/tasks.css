@@ -241,11 +241,8 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
-<<<<<<< HEAD
-    background-color: #f38cf350;
-=======
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
->>>>>>> f9f58c347ffbf7747f7b178d2451d7b50379343a
+
 }
 
 .card:hover {
@@ -311,7 +308,7 @@ html {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #03011b;
+    background-color: rgb(24, 23, 23);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -319,7 +316,7 @@ html {
 }
 
 .button:hover {
-    background-color: #04033de5;
+    background-color: rgb(63, 61, 61);
 }
 
 /* .footer {
