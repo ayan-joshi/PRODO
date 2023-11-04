@@ -1,12 +1,54 @@
 html {
-    font-family: 'Fira Code';
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   }
+
+  .header {
+    border-bottom: 4px solid rgb(215, 244, 230);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    font-size: 10px;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_icon {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+   color: white;
+}
+
+.logo_box {
+    margin-left: 20px;
+    margin-right: 220px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    /* vertical align*/
+}
+
+#web_app_name {
+    margin: 8px 0px 0px 5px;
+    padding: 0px;
+    padding-left: 635px;
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
   
   .pageTitle {
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
-    font-family: "Fira Code" !important;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .form-group {
@@ -24,6 +66,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px auto;
+    color: white;
   }
   
   #payButton {
@@ -32,14 +75,13 @@ html {
     margin: 20px auto;
     height: 50px !important;
     font-size: 20px;
-    background-color: #1CC48B;
-    border-color: #1CC48B;
+    background: linear-gradient(109.6deg, rgba(118, 116, 116, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    border-color: rgb(209, 209, 209);
     box-shadow: 0 3px 10px #bbbbbb;
   }
   
   #payButton:hover {
-    background-color: #19C687;
-    border-color: #19C687;
+    background-color: rgb(154, 152, 152);
     box-shadow: 0 3px 4px #bbbbbb;
   }
   
@@ -50,7 +92,7 @@ html {
   .form-control {
     border: 20px solid #FFFFFF !important;
     box-shadow: 0 2px 2px #dddddd !important;
-    font-family: 'Fira Code';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     
   }
@@ -73,6 +115,7 @@ html {
   @media only screen and (max-width: 600px) {
     .pageTitle {
       font-size: 30px;
+      color: white;
     }
   
     .theForm {
