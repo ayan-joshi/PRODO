@@ -263,11 +263,7 @@ html {
     margin: 20px;
     height: 500px;
     border: 1px solid gainsboro;
-<<<<<<< HEAD
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-=======
-    background-color: #68686850;
->>>>>>> 478a74aa1927b6848257bc1369d9e391f95443bd
 }
 
 .card:hover {

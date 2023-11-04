@@ -10,7 +10,8 @@ body {
 }
 
 .modal-content {
-    background-color: gray;
+    background-color: #47ac7d;
+    color: black;
 }
 
 .header {
@@ -133,7 +134,7 @@ a {
 }
 
 tr {
-    background-color: #ff6e51;
+    background-color: #009c53;
 }
 
 td {
