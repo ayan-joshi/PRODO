@@ -57,6 +57,7 @@ body {
 #body_container {
   margin: 0px;
   height: 100%;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 
 }
 
@@ -157,22 +158,23 @@ body {
   background: white;
 }
 
-.wrapper {
+.wrapper1 {
   margin: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
   /* Change to grid-template-rows */
 }
 
-.wrapper li {
+.wrapper1 li {
   height: 250px;
   list-style: none;
   border-radius: 7px;
   border: 1px solid black;
   padding: 15px 20px 20px;
   background: rgb(227, 222, 222);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 30px 20px 20px rgb(0, 0, 0);
 }
 
 .add-box,
@@ -427,7 +429,7 @@ form button {
 
 
 @media (max-width: 660px) {
-  .wrapper {
+  .wrapper1 {
     margin: 15px;
     gap: 15px;
     grid-template-columns: repeat(auto-fill, 100%);
