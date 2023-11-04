@@ -287,3 +287,104 @@ svg {
     flex-direction: row;
 }
 @media screen and (min-width: 320px) {}
+
+
+
+/* sidebar rishi */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    place-items: center;
+    background: linear-gradient(315deg,#ffffff,#d7e1ec);
+} */
+
+.wrapper{
+    display: inline-block;
+    list-style: none;
+}
+
+.wrapper .icon{
+    position: relative;
+    background-color: #222222;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .name{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px black;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .name::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .name{
+    top: 10px;
+    left: 80px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .name{
+    text-shadow: 0px -1px 0px rgb(0, 0, 0,0.1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.wrapper .show:hover,
+.wrapper .show:hover .name,
+.wrapper .show:hover .name::before{
+    color: white;
+    background-color: rgb(29, 28, 28);
+
+}

@@ -10,6 +10,7 @@ body {
 
 .header {
     border-bottom: 4px solid rgb(215, 244, 230);
+    left: 0;
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 15px;
@@ -194,9 +195,11 @@ html {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.about-section{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+
 .row {
-    /* background-color: #fdf4a5; */
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -269,7 +272,6 @@ html {
     margin-bottom: 30px;
     text-align: center;
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-    color: black;
     color: white;
 }
 
@@ -349,9 +351,6 @@ html {
     text-decoration: none;
 }
 
-#last{
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-}
 
 #lasthr{
     margin: 1px;

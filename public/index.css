@@ -107,6 +107,9 @@ a:hover {
     width: 100vw;
 }
 
+.modal-content{
+    color: black;
+}
 /*added CSS */
 
 body {
@@ -171,7 +174,7 @@ body {
 
 .content h1:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: 4px rgb(219, 219, 219);
+    -webkit-text-stroke: 4px rgb(243, 239, 239);
 }
 
 .content h1:nth-child(2){
