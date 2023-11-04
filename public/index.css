@@ -107,22 +107,6 @@ a:hover {
     width: 100vw;
 }
 
-.modal-content {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    color: black;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 1.3rem;
-    outline: 0;
-}
-
 /*added CSS */
 
 body {
