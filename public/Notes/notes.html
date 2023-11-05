@@ -24,72 +24,17 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <!-- auth -->
-        <script type="module">
-            // Import functions
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-            import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
-            import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js";
-
-            // Firebase configuration
-            const firebaseConfig = {
-                apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
-                authDomain: "student-webdesk.firebaseapp.com",
-                databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
-                projectId: "student-webdesk",
-                storageBucket: "student-webdesk.appspot.com",
-                messagingSenderId: "594056866812",
-                appId: "1:594056866812:web:3dd340a4f54dd149f42079"
-            };
-
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-
-            const notesCollection = collection(db, "notes");
-
-            document.getElementById("#addBtn").addEventListener("click", () => {
-                const notesTitle = document.getElementById("notesTitle").value;
-                const notesInput = document.getElementById("notesInput").value;
-
-                const note = {
-                    title: notesTitle,
-                    input: notesInput,
-                };
-
-                addDoc(notesCollection, note)
-                    .then((docRef) => {
-                        console.log("Task added with ID: ", docRef.id);
-                    })
-                    .catch((error) => {
-                        console.error("Error adding task: ", error);
-                    });
-                
-                    document.getElementById("notesTitle").value = "";
-                    document.getElementById("notesInput").value = "";
-            });
         
-        </script>
     </head>
 
     <body>
         <div id="body_container">
-            <div class="main"> <!-- user card -->
-                <!-- <div id="userCard" class="card bg-light"
-                    style="display: none; position: relative; right: 10%; top: 0px; text-align: center; padding: 5px; height: 40px;">
-                    <div id="userIcon">
-                        <i style="font-size: 24px; color: rgb(85,208,156);" class='fas fa-user-astronaut'></i>
-                        <span style="font-size: 16px;" id="userInfoEmail"></span>
-                    </div> -->
-                <!--logout button-->
-                <!-- <div id="logoutButton" style="display: none; position: absolute; right: 4%; top: 20px;">
-        <button onclick="" class="btn btn-primary">Logout</button>
-    </div> -->
+            <div class="main">
                 <div class="sidebar">
                     <ul class="wrapper">
 
                         <center>
-                            <h1 class="text">PRODO</h1>
+                            <h1 style="font-size: 30px;">PRODO</h1>
                         </center>
 
 
@@ -143,13 +88,14 @@
                             <form action="#">
                                 <div class="row title">
                                     <label>Title</label>
-                                    <input type="text" spellcheck="false">
+                                    <input type="text" spellcheck="false" id="notesTitle">
                                 </div>
                                 <div class="row description">
                                     <label>Description</label>
-                                    <textarea spellcheck="false"></textarea>
+                                    <textarea spellcheck="false" id="notesInput"> 
+                                    </textarea>
                                 </div>
-                                <button></button>
+                                <button id="addBtn">Add Note</button>                                
                             </form>
                         </div>
                     </div>
@@ -194,7 +140,7 @@
         </div>
         </div>
 
-        <script src="script.js"></script>
+        <script type="module" src="script.js"></script>
         <script src="https://kit.fontawesome.com/fbac178719.js" crossorigin="anonymous"></script>
 
         <!-- BootStrap -->
