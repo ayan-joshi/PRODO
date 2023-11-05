@@ -36,7 +36,7 @@ a {
 #web_app_name {
     margin: 8px 0px 0px 5px;
     padding: 0px;
-    padding-left: 635px;
+    padding-left: 0px;
     font-size: 50px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,6 +46,7 @@ a {
   
   .pageTitle {
     text-align: center;
+    padding-top: 50px;
     margin-top: 20px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,7 +54,7 @@ a {
   
   .form-group {
     width: 290px;
-    padding-top: 20px;
+    padding-top: 50px;
     height: 50px;
 
 
@@ -73,11 +74,12 @@ a {
     width: 290px;
     display: block;
     margin: 20px auto;
-    height: 50px !important;
+    height: 50px;
     font-size: 20px;
     background: linear-gradient(109.6deg, rgba(118, 116, 116, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     border-color: rgb(209, 209, 209);
     box-shadow: 0 3px 10px #bbbbbb;
+    color: white;
   }
   
   #payButton:hover {
@@ -99,11 +101,6 @@ a {
   
   .form-control:hover {
     box-shadow: 0 20px 20px #dddddd;
-  }
-  
-  .form-control:focus {
-    box-shadow: 0 20px 20px #dddddd !important;
-    border: 3px solid #1CC48B !important;
   }
   
   #paymentTokenInfo {
