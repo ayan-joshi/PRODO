@@ -48,8 +48,8 @@ a {
 
 #web_app_name {
     margin: 8px 0px 0px 5px;
-    padding: 10px;
-    padding-left: 49px;
+    padding: 0px;
+    padding-left: 635px;
     font-size: 50px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -196,7 +196,7 @@ html {
 }
 
 .about-section{
-    border-bottom: 2px solid rgb(150, 148, 148);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 
 .row {
@@ -317,7 +317,6 @@ html {
 
 .button:hover {
     background-color: rgb(63, 61, 61);
-    border: 1px solid #0f0f0f;
 }
 
 /* .footer {
@@ -349,11 +348,6 @@ html {
     text-decoration: none;
 }
 
-#firsthr{
-    width: 40%;
-    margin: 1px;
-    background-color: rgb(119, 117, 117);
-}
 
 #lasthr{
     margin: 1px;

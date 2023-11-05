@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-body {
+body{
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
@@ -66,7 +66,6 @@ a {
     background-color: black;
     margin: 6px 0;
 }
-
 svg {
     height: 100px;
     margin-top: 20px;
@@ -143,7 +142,7 @@ svg {
 .right_box {
     width: 30%;
     height: 100%;
-}
+} 
 
 .page_image {
     width: 500px;
@@ -174,8 +173,8 @@ svg {
 
     background-color: #fff;
     height: 300px;
-    margin: 20px;
-    width: 300px;
+        margin: 20px;
+            width: 300px;
     border-radius: 5px;
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -184,7 +183,6 @@ svg {
 .card-content:hover {
     transform: scale(1.03);
 }
-
 .first-cards,
 .second-cards {
     display: flex;
@@ -230,7 +228,6 @@ svg {
     flex-direction: column;
 
 }
-
 /* styles.css */
 
 /* Sidebar styles */
@@ -289,7 +286,6 @@ svg {
     display: flex;
     flex-direction: row;
 }
-
 @media screen and (min-width: 320px) {}
 
 
@@ -297,7 +293,7 @@ svg {
 /* sidebar rishi */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,12 +305,21 @@ svg {
     -webkit-tap-highlight-color: transparent;
 }
 
-.wrapper {
+/* html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    place-items: center;
+    background: linear-gradient(315deg,#ffffff,#d7e1ec);
+} */
+
+.wrapper{
     display: inline-block;
     list-style: none;
 }
 
-.wrapper .icon {
+.wrapper .icon{
     position: relative;
     background-color: #181717;
     border-radius: 50%;
@@ -329,10 +334,10 @@ svg {
     flex-direction: column;
     box-shadow: 0 10px 10px rgb(0, 0, 0);
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 
-.wrapper .name {
+.wrapper .name{
     position: absolute;
     top: 10px;
     left: 80px;
@@ -344,10 +349,10 @@ svg {
     box-shadow: 0 10px 10px black;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 
-.wrapper .name::before {
+.wrapper .name::before{
     position: absolute;
     content: "";
     height: 8px;
@@ -356,10 +361,10 @@ svg {
     top: 50%;
     left: 0;
     transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 
-.wrapper .icon:hover .name {
+.wrapper .icon:hover .name{
     top: 10px;
     left: 80px;
     opacity: 1;
@@ -368,18 +373,17 @@ svg {
 }
 
 .wrapper .icon:hover span,
-.wrapper .icon:hover .name {
-    text-shadow: 0px -1px 0px rgb(0, 0, 0, 0.1);
+.wrapper .icon:hover .name{
+    text-shadow: 0px -1px 0px rgb(0, 0, 0,0.1);
     font-size: 22px;
     font-weight: bold;
-    transition: all 0.1s ease-in-out;
 }
 
 
 
 .wrapper .show:hover,
 .wrapper .show:hover .name,
-.wrapper .show:hover .name::before {
+.wrapper .show:hover .name::before{
     color: white;
     background-color: rgb(29, 28, 28);
 

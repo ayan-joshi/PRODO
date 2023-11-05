@@ -45,9 +45,9 @@ a {
 
 #web_app_name {
     margin: 8px 0px 0px 5px;
-    padding: 20px;
+    padding: 0px;
     font-size: 50px;
-    padding-left: 49px;
+    padding-left: 600px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
@@ -330,12 +330,7 @@ a {
 @media only screen and (min-width: 768px) {
   .pricing-list {
     margin: 3em 0 0;
-    display: flex;
-    flex-direction: row;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-}
+  }
   .pricing-list:after {
     content: "";
     display: table;
@@ -719,7 +714,6 @@ a {
 /* rishi code*/
 .exclusive{
   color: #000;
-  margin: 0 30px;
 }
 
 
@@ -729,18 +723,23 @@ a {
   cursor: pointer;
 }
 
-#basic,#pro{
-  width: 22%;
+#basic{
+  width: 30%;
 }
 
 #exclusive{
+  width: 40%;
+}
+
+#pro{
   width: 30%;
 }
 
 #one,#two,#three{
   border: 2px solid black;
-  border-radius: 7px;
+  border-radius: 5px;
   margin: 15px;
+  background-color: #dac6fb;
 }
 
 #one h2,#three h2{

@@ -1,9 +1,8 @@
-body {
-  margin: 0px;
-  background-size: cover;
+body{
+    margin: 0px;
+    background-size: cover;
 
 }
-
 .sidebar {
   height: 100vh;
 
@@ -53,486 +52,342 @@ body {
   display: flex;
   flex-direction: row;
 }
-
-#body_container {
-  margin: 0px;
-  height: 100%;
-  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+#body_container{
+    margin: 0px;
+    height: 100%;
 
 }
 
-.header {
+.header{
 
-  border-bottom: 4px solid rgb(215, 244, 230);
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 15px;
+    border-bottom: 4px solid rgb(215,244,230);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
 
-  font-size: 10px;
-  background-color: rgb(255, 255, 255);
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
 
-.menu_icon1 {
+.menu_icon{
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+a{
+    text-decoration: none;
+    color: #000;
 }
 
-.logo_box {
-  margin-left: 20px;
-  margin-right: 220px;
-  width: fit-content;
+.logo_box{
+    margin-left: 20px;
+    margin-right: 220px;
+    width: fit-content;
 
-  display: flex;
-  align-items: center;
-  /* vertical align*/
-}
-
-
-.logo_box img {
-  margin: 8px 0px 0px 0px;
-  padding: 0px;
-  width: 50px;
-  height: 50px;
-}
-
-#web_app_name {
-  margin: 8px 0px 0px 5px;
-  padding: 0px;
-  font-size: 25px;
-  font-family: 'Fira Code';
-  font-weight: bold;
+    display: flex;
+    align-items:center; /* vertical align*/
 }
 
 
-.menu_icon1 div {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
+.logo_box img{
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+#web_app_name{
+    margin: 8px 0px 0px 5px;
+    padding: 0px;
+    font-size: 25px;
+    font-family: 'Fira Code';
+    font-weight: bold;
+}
+
+
+.menu_icon div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 
 }
 
 .menu_bar {
-  margin-top: 8px;
-  align-content: center;
+    margin-top: 8px;
+    align-content: center;
 }
 
 
-.menu_bar h3 {
-  display: inline;
-  margin-right: 30px;
+.menu_bar h3{
+    display: inline;
+    margin-right: 30px;
 
-  font-family: Fira Code;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 900;
+    font-family: Fira Code;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 900;
 }
 
-.menu_bar h3:hover {
-  /* text-decoration: underline; */
-  border-bottom: 3px solid black;
+.menu_bar h3:hover{
+    /* text-decoration: underline; */
+    border-bottom: 3px solid black;
 }
 
-.icon1
+
 /* new */
 
-body {
+body{
   background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
-::selection {
-  color: rgb(67, 255, 177);
-  background: white;
-}
-
-.wrapper1 {
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  /* Change to grid-template-rows */
-}
-
-.wrapper1 li {
-  height: 250px;
-  list-style: none;
-  border-radius: 7px;
-  border: 1px solid black;
-  padding: 15px 20px 20px;
-  background: rgb(227, 222, 222);
-  box-shadow: 30px 20px 20px rgb(0, 0, 0);
-}
-
-.add-box,
-.icon1,
-.bottom-content,
-.popup,
-header,
-.settings .menu li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.add-box {
-  margin: 20px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  width: 250px;
-}
-
-.add-box .icon1 {
-  height: 78px;
-  width: 78px;
-  color: black;
-  font-size: 40px;
-  border-radius: 50%;
-  justify-content: center;
-  border: 2px dashed black;
-}
-
-.add-box p {
-  color: black;
-  font-weight: 500;
-  margin-top: 20px;
-}
-
-.note {
-  width: 250px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.note .details {
-  max-height: 165px;
-  overflow-y: auto;
-}
-
-.note .details::-webkit-scrollbar,
-.popup textarea::-webkit-scrollbar {
-  width: 0;
-}
-
-.note .details:hover::-webkit-scrollbar,
-.popup textarea:hover::-webkit-scrollbar {
-  width: 5px;
-}
-
-.note .details:hover::-webkit-scrollbar-track,
-.popup textarea:hover::-webkit-scrollbar-track {
-  background: #dac6fb;
-  border-radius: 25px;
-}
-
-.note .details:hover::-webkit-scrollbar-thumb,
-.popup textarea:hover::-webkit-scrollbar-thumb {
-  background: #dac6fb;
-  border-radius: 25px;
-}
-
-.note p {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.note span {
-  display: block;
-  color: black;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.note .bottom-content {
-  padding-top: 10px;
-  border-top: 1px solid #ccc;
-}
-
-.bottom-content span {
-  color: black;
-  font-size: 14px;
-}
-
-.bottom-content .settings {
-  position: relative;
-}
-
-.bottom-content .settings i {
-  color: black;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.settings .menu {
-  z-index: 1;
-  bottom: 0;
-  right: -5px;
-  padding: 5px 0;
-  background: black;
-  position: absolute;
-  border-radius: 2px;
-  transform: scale(0);
-  transform-origin: bottom right;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-}
-
-.settings.show .menu {
-  transform: scale(1);
-}
-
-.settings .menu li {
-  height: 25px;
-  font-size: 16px;
-  margin-bottom: 2px;
-  padding: 17px 15px;
-  cursor: pointer;
-  box-shadow: none;
-  border-radius: 0;
-  justify-content: flex-start;
-}
-
-.menu li:last-child {
-  margin-bottom: 0;
-}
-
-.menu li:hover {
-  background: #f5f5f5;
-}
-
-.menu li i {
-  padding-right: 8px;
-}
-
-.popup-box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.popup-box .popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  width: 100%;
-  max-width: 400px;
-  justify-content: center;
-  transform: translate(-50%, -50%) scale(0.95);
-}
-
-.popup-box,
-.popup {
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.25s ease;
-}
-
-.popup-box.show,
-.popup-box.show .popup {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.popup-box.show .popup {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.popup .content {
-  border-radius: 5px;
-  background: #fff;
-  width: calc(100% - 15px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.content header {
-  padding: 15px 25px;
-  border-bottom: 1px solid #ccc;
-}
-
-.content header p {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.content header i {
-  color: #8b8989;
-  cursor: pointer;
-  font-size: 23px;
-}
-
-.content form {
-  margin: 15px 25px 35px;
-}
-
-.content form .row {
-  margin-bottom: 20px;
-}
-
-form .row label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 6px;
-}
-
-form :where(input, textarea) {
-  height: 50px;
-  width: 100%;
-  outline: none;
-  font-size: 17px;
-  padding: 0 15px;
-  border-radius: 4px;
-  border: 1px solid #999;
-}
-
-form :where(input, textarea):focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
-}
-
-form .row textarea {
-  height: 150px;
-  resize: none;
-  padding: 8px 15px;
-}
-
-form button {
-  width: 100%;
-  height: 50px;
-  color: #fff;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-size: 17px;
-  border-radius: 4px;
-  background: rgb(122, 119, 119);
-}
-
-
-@media (max-width: 660px) {
-  .wrapper1 {
-    margin: 15px;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fill, 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
   }
-
-  .popup-box .popup {
-    max-width: calc(100% - 15px);
+  ::selection{
+    color: rgb(67, 255, 177);
+    background:  white;
   }
-
-  .bottom-content .settings i {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .wrapper {
+    margin: 50px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Change to grid-template-rows */
+  }
+  
+  .wrapper li{
+    height: 250px;
+    list-style: none;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 15px 20px 20px;
+    background: rgb(227, 222, 222);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  .add-box, .icon, .bottom-content, 
+  .popup, header, .settings .menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .add-box{
+    margin: 20px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+  }
+  .add-box .icon{
+    height: 78px;
+    width: 78px;
+    color:  black;
+    font-size: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 2px dashed  black;
+  }
+  .add-box p{
+    color:  black;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .note{
+    width: 250px;
+      margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .note .details{
+    max-height: 165px;
+    overflow-y: auto;
+  }
+  .note .details::-webkit-scrollbar,
+  .popup textarea::-webkit-scrollbar{
+    width: 0;
+  }
+  .note .details:hover::-webkit-scrollbar,
+  .popup textarea:hover::-webkit-scrollbar{
+    width: 5px;
+  }
+  .note .details:hover::-webkit-scrollbar-track,
+  .popup textarea:hover::-webkit-scrollbar-track{
+    background: #dac6fb;
+    border-radius: 25px;
+  }
+  .note .details:hover::-webkit-scrollbar-thumb,
+  .popup textarea:hover::-webkit-scrollbar-thumb{
+    background: #dac6fb;
+    border-radius: 25px;
+  }
+  .note p{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .note span{
+    display: block;
+    color: black;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .note .bottom-content{
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+  .bottom-content span{
+    color: black;
+    font-size: 14px;
+  }
+  .bottom-content .settings{
+    position: relative;
+  }
+  .bottom-content .settings i{
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .settings .menu{
+    z-index: 1;
+    bottom: 0;
+    right: -5px;
+    padding: 5px 0;
+    background: black;
+    position: absolute;
+    border-radius: 2px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+  }
+  .settings.show .menu{
+    transform: scale(1);
+  }
+  .settings .menu li{
+    height: 25px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    padding: 17px 15px;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 0;
+    justify-content: flex-start;
+  }
+  .menu li:last-child{
+    margin-bottom: 0;
+  }
+  .menu li:hover{
+    background: #f5f5f5;
+  }
+  .menu li i{
+    padding-right: 8px;
+  }
+  
+  .popup-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+  .popup-box .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  .popup-box, .popup{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+  .popup-box.show, .popup-box.show .popup{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .popup-box.show .popup{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .popup .content{
+    border-radius: 5px;
+    background: #fff;
+    width: calc(100% - 15px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  .content header{
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+  }
+  .content header p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content header i{
+    color: #8b8989;
+    cursor: pointer;
+    font-size: 23px;
+  }
+  .content form{
+    margin: 15px 25px 35px;
+  }
+  .content form .row{
+    margin-bottom: 20px;
+  }
+  form .row label{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  form :where(input, textarea){
+    height: 50px;
+    width: 100%;
+    outline: none;
     font-size: 17px;
+    padding: 0 15px;
+    border-radius: 4px;
+    border: 1px solid #999;
   }
-}
-
-
-
-/* sidebar rishi */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*:focus,
-*active {
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.wrapper {
-  display: inline-block;
-  list-style: none;
-}
-
-.wrapper .icon {
-  position: relative;
-  background-color: #181717;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 10px;
-  width: 70px;
-  height: 70px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgb(0, 0, 0);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .name {
-  position: absolute;
-  top: 10px;
-  left: 80px;
-  font-size: 14px;
-  background-color: rgb(29, 28, 28);
-  color: #ffffff;
-  padding: 5px 15px;
-  border-radius: 8px;
-  box-shadow: 0 10px 10px black;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .name::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: rgb(29, 28, 28);
-  top: 50%;
-  left: 0;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .name {
-  top: 10px;
-  left: 80px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .name {
-  text-shadow: 0px -1px 0px rgb(0, 0, 0, 0.1);
-  font-size: 22px;
-  font-weight: bold;
-  transition: all 0.1s ease-in-out;
-}
-
-
-
-.wrapper .show:hover,
-.wrapper .show:hover .name,
-.wrapper .show:hover .name::before {
-  color: white;
-  background-color: rgb(29, 28, 28);
-
-}
+  form :where(input, textarea):focus{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.11);
+  }
+  form .row textarea{
+    height: 150px;
+    resize: none;
+    padding: 8px 15px;
+  }
+  form button{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 4px;
+    background: rgb(122, 119, 119);
+  }
+  
+  
+  @media (max-width: 660px){
+    .wrapper{
+      margin: 15px;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .popup-box .popup{
+      max-width: calc(100% - 15px);
+    }
+    .bottom-content .settings i{
+      font-size: 17px;
+    }
+  }
