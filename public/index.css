@@ -158,6 +158,21 @@ body {
     opacity: 1;
 }
 
+.content h1:after{
+    content: attr(REFL-TEXT);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+    line-height: 0.97em;
+    transform-origin: bottom;
+    background: linear-gradient(0deg, #fff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.2;
+    -webkit-text-stroke: 4px rgb(255, 255, 255);
+}
+
 .content h1:before{
     content: attr(REFL-TEXT);
     position: absolute;
@@ -170,6 +185,7 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     opacity: 0.2;
+    animation: animate 3s ease-in-out infinite; 
 }
 
 .content h1:nth-child(1){
