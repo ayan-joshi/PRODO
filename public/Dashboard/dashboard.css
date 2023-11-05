@@ -155,9 +155,6 @@ svg {
     object-fit: fill;
 }
 
-
-
-
 .cards-container {
     margin-top: 3%;
     display: flex;
@@ -169,9 +166,7 @@ svg {
 }
 
 .card-content {
-
     padding: 10px;
-
     background-color: #fff;
     height: 300px;
     margin: 20px;

@@ -197,9 +197,9 @@ td {
     background-attachment: fixed;
     overflow: hidden;
     color: white;
-    padding-top: 200px;
-    padding-left: 500px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cal-main {

@@ -1,132 +1,135 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+}
 
-  .header {
-    border-bottom: 4px solid rgb(215, 244, 230);
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    font-size: 10px;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  border-bottom: 4px solid rgb(215, 244, 230);
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  font-size: 10px;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu_icon {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-   color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .logo_box {
-    margin-left: 20px;
-    margin-right: 220px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    /* vertical align*/
+  margin-left: 20px;
+  margin-right: 220px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  /* vertical align*/
 }
 
 #web_app_name {
-    margin: 8px 0px 0px 5px;
-    padding: 0px;
-    padding-left: 0px;
-    font-size: 50px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  margin: 8px 0px 0px 5px;
+  padding: 0px;
+  padding-left: 0px;
+  font-size: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-  
+
+
+
+/* payement code */
+
+.pageTitle {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+  width: 290px;
+  padding-top: 50px;
+  height: 50px;
+}
+
+.formInner {
+  padding-left: 80px;
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  color: white;
+  justify-content: space-around;
+}
+
+#payButton {
+  width: 290px;
+  display: block;
+  margin: 60px auto;
+  height: 50px;
+  font-size: 20px;
+  background: linear-gradient(109.6deg, rgba(118, 116, 116, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  border-color: rgb(209, 209, 209);
+  box-shadow: 6px 6px 15px #bbbbbb;
+  color: white;
+}
+
+#payButton:hover {
+  cursor: pointer;
+  background-color: rgb(154, 152, 152);
+  box-shadow: 0 3px 4px #bbbbbb;
+}
+
+#payButton:active {
+  opacity: 0.7;
+}
+
+.form-control {
+  border: 20px solid #FFFFFF !important;
+  box-shadow: 0 2px 2px #dddddd !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+}
+
+.form-control:hover {
+  box-shadow: 0 20px 20px #dddddd;
+}
+
+#paymentTokenInfo {
+  display: block;
+  width: 600px;
+  margin: 30px auto;
+}
+
+@media only screen and (max-width: 600px) {
   .pageTitle {
-    text-align: center;
-    padding-top: 50px;
-    margin-top: 20px;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
   }
-  
+
+  .theForm {
+    width: 300px;
+    max-width: 90%;
+    margin: auto;
+  }
+
   .form-group {
-    width: 290px;
-    padding-top: 50px;
-    height: 50px;
+    width: 100%;
+  }
 
-
-  }
-  
-  .formInner {
-    width: 600px;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px auto;
-    color: white;
-  }
-  
-  #payButton {
-    width: 290px;
-    display: block;
-    margin: 20px auto;
-    height: 50px;
-    font-size: 20px;
-    background: linear-gradient(109.6deg, rgba(118, 116, 116, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-    border-color: rgb(209, 209, 209);
-    box-shadow: 0 3px 10px #bbbbbb;
-    color: white;
-  }
-  
-  #payButton:hover {
-    background-color: rgb(154, 152, 152);
-    box-shadow: 0 3px 4px #bbbbbb;
-  }
-  
-  #payButton:active {
-    opacity: 0.7;
-  }
-  
-  .form-control {
-    border: 20px solid #FFFFFF !important;
-    box-shadow: 0 2px 2px #dddddd !important;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    
-  }
-  
-  .form-control:hover {
-    box-shadow: 0 20px 20px #dddddd;
-  }
-  
   #paymentTokenInfo {
-    display: block;
-    width: 600px;
-    margin: 30px auto;
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .pageTitle {
-      font-size: 30px;
-      color: white;
-    }
-  
-    .theForm {
-      width: 300px;
-      max-width: 90%;
-      margin: auto;
-    }
-  
-    .form-group {
-      width: 100%;
-    }
-  
-    #paymentTokenInfo {
-      width: 100%;
-    }
-  }
-    
+}

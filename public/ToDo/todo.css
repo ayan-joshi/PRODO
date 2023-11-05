@@ -47,18 +47,12 @@ a {
 
 .content_pane {
   margin: auto;
-  margin-top: 70px;
-  /* border: 1px solid red; */
-  /* i use borders to see where the html elements are before I position them */
-
-  width: 100%;
-
+  width: 65%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   display: flex;
-  padding-left: 500px;
+  justify-content: center;
 }
-
 
 
 
