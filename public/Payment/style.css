@@ -111,6 +111,7 @@ a {
   display: block;
   width: 600px;
   margin: 30px auto;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
