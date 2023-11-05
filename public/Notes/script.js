@@ -33,28 +33,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showNotes() {
         if (!notes) return;
-        document.querySelectorAll(".note").forEach(li => li.remove());
+        const notesList = document.getElementById("notes-list");
+        notesList.innerHTML = ''; // Clear the notes list
+    
         notes.forEach((note, id) => {
             let filterDesc = note.description ? note.description.replaceAll("\n", '<br/>') : "";
-            let liTag = `<li class="note">
-                            <div class="details">
-                                <p>${note.title}</p>
-                                <span>${filterDesc}</span>
-                            </div>
-                            <div class="bottom-content">
-                                <span>${note.date}</span>
-                                <div class="settings">
-                                    <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
-                                    <ul class="menu">
-                                        <li onclick="updateNote(${id}, '${note.title}', '${filterDesc}')"><i class="uil uil-pen"></i>Edit</li>
-                                        <li onclick="deleteNote(${id})"><i class="uil uil-trash"></i>Delete</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>`;
-            addBox.insertAdjacentHTML("afterend", liTag);
+            let liTag = `<li class="note" data-id="${id}" data-title="${note.title}" data-description="${filterDesc}">
+                <div class="details">
+                    <p>${note.title}</p>
+                    <span>${filterDesc}</span>
+                </div>
+                <div class="bottom-content">
+                    <span>${note.date}</span>
+                    <div class="settings">
+                        <i class="uil uil-ellipsis-h"></i>
+                        <ul class="menu">
+                            <li class="edit-note"><i class="uil uil-pen"></i>Edit</li>
+                            <li class="delete-note"><i class="uil uil-trash"></i>Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>`;
+            notesList.insertAdjacentHTML("beforeend", liTag);
+        });
+    
+        // Add event listeners to note elements
+        const noteElements = notesList.querySelectorAll(".note");
+
+
+        noteElements.forEach((noteElement) => {
+            const editButton = noteElement.querySelector(".edit-note");
+            const deleteButton = noteElement.querySelector(".delete-note");
+    
+            editButton.addEventListener("click", () => {
+                const id = noteElement.getAttribute("data-id");
+                const title = noteElement.getAttribute("data-title");
+                const description = noteElement.getAttribute("data-description");
+                updateNote(id, title, description);
+            });
+    
+            deleteButton.addEventListener("click", () => {
+                const id = noteElement.getAttribute("data-id");
+                deleteNote(id);
+            });
+    
+            noteElement.querySelector(".uil-ellipsis-h").addEventListener("click", () => {
+                showMenu(noteElement.querySelector(".uil-ellipsis-h"));
+            });
         });
     }
+    
+    
     
 
     function showMenu(elem) {
