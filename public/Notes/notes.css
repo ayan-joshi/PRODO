@@ -154,7 +154,7 @@ body {
 }
 
 ::selection {
-  color: rgb(67, 255, 177);
+  color: white;
   background: white;
 }
 
