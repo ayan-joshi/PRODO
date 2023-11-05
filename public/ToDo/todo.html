@@ -28,14 +28,14 @@
 
         // Firebase configuration
         const firebaseConfig = {
-                apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
-                authDomain: "student-webdesk.firebaseapp.com",
-                databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
-                projectId: "student-webdesk",
-                storageBucket: "student-webdesk.appspot.com",
-                messagingSenderId: "594056866812",
-                appId: "1:594056866812:web:3dd340a4f54dd149f42079"
-            };
+            apiKey: "AIzaSyAxQ8RpmZMUcoLk4jfQ2rXk5S7ckfDJKkI",
+            authDomain: "student-webdesk.firebaseapp.com",
+            databaseURL: "https://student-webdesk-default-rtdb.firebaseio.com",
+            projectId: "student-webdesk",
+            storageBucket: "student-webdesk.appspot.com",
+            messagingSenderId: "594056866812",
+            appId: "1:594056866812:web:3dd340a4f54dd149f42079"
+        };
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
@@ -69,146 +69,120 @@
 </head>
 
 <body>
-        <div class="main">
-            
-            <div class="sidebar">
-                <!-- Sidebar content with SVG icons -->
-        
-                <ul>
-                    <li style="font-size: 25px;font-weight: bold;">PRODO</li>
-                    <li>
-                        <a href="../Dashboard/dashboard.html">
-                            <?xml version="1.0" ?><svg baseProfile="tiny" height="100px" id="Layer_1" version="1.2" viewBox="0 0 24 24"
-                                width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"
-                                    fill="white" />
-                            </svg>
-                        </a>
+    <div class="main">
+
+        <div class="sidebar">
+            <ul class="wrapper">
+
+                <center>
+                    <h1 style="font-size: 30px;">PRODO</h1>
+                </center>
+
+                <a href="../Dashboard/dashboard.html">
+                    <li class="icon show">
+                        <span class="name">Home</span>
+                        <span><i class="fa-solid fa-house" style="color: #ffffff;"></i></span>
                     </li>
-                    <li>
-                        <a href="../Calendar/calendar.html">
-                            <?xml version="1.0" ?><svg class="svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm5 0h2v2h-2V9zm0 4h2v2h-2v-2zm4 0h2v2h-2v-2zm0 4h2v2h-2v-2z"
-                                    fill="white" />
-                            </svg>
-                        </a>
+                </a>
+
+                <a href="../Calendar/calendar.html">
+                    <li class="icon show">
+                        <span class="name">Calender</span>
+                        <span><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i></span>
                     </li>
-                    <li>
-                        <a href="../ToDo/ToDo.html">
-                            <?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M80 48h-64C7.156 48 0 55.16 0 64v64c0 8.844 7.156 16 16 16h64C88.84 144 96 136.8 96 128V64C96 55.16 88.84 48 80 48zM80 208h-64C7.156 208 0 215.2 0 224v64c0 8.844 7.156 16 16 16h64C88.84 304 96 296.8 96 288V224C96 215.2 88.84 208 80 208zM80 368h-64C7.156 368 0 375.2 0 384v64c0 8.844 7.156 16 16 16h64C88.84 464 96 456.8 96 448v-64C96 375.2 88.84 368 80 368zM192 128h288c17.67 0 32-14.33 32-31.1S497.7 64 480 64H192C174.3 64 160 78.33 160 95.1S174.3 128 192 128zM480 384H192c-17.67 0-32 14.33-32 32s14.33 32 32 32h288c17.67 0 32-14.33 32-32S497.7 384 480 384zM480 224H192C174.3 224 160 238.3 160 256s14.33 32 32 32h288c17.67 0 32-14.33 32-32S497.7 224 480 224z"
-                                    fill="white" />
-                            </svg>
-                        </a>
+                </a>
+
+                <a href="../ToDo/ToDo.html">
+                    <li class="icon show">
+                        <span class="name">Kanban</span>
+                        <span><i class="fa-solid fa-list" style="color: #ffffff;"></i></span>
                     </li>
-                    <li>
-                        <a href="../Pomodoro/Pomodoro.html">
-                            <?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1"
-                                viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M1,9c0,3.866,3.134,7,7,7s7-3.134,7-7c0-3.866-3.134-7-7-7S1,5.134,1,9z M8,3c3.314,0,6,2.686,6,6s-2.686,6-6,6  s-6-2.686-6-6S4.686,3,8,3z"
-                                    fill="white" />
-                                <rect height="1" width="4" x="6" fill="white" />
-                                <rect height="2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2.3329 10.632)" width="1" x="13.5"
-                                    y="1.5" fill="white" />
-                                <path d="M8,4v5h5C13,6.239,10.761,4,8,4z" fill="white" />
-                            </svg>
-                        </a>
+                </a>
+
+                <a href="../Pomodoro/Pomodoro.html">
+                    <li class="icon show">
+                        <span class="name">Pomodoro</span>
+                        <span><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i></span>
                     </li>
-                    <li>
-                        <a href="../Notes/notes.html">
-                            <?xml version="1.0" ?><svg fill="none" class="svg" height="100px" viewBox="0 0 24 24" width="100px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6 6C6 5.44772 6.44772 5 7 5H17C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7H7C6.44771 7 6 6.55228 6 6Z"
-                                    fill="white" />
-                                <path
-                                    d="M6 10C6 9.44771 6.44772 9 7 9H17C17.5523 9 18 9.44771 18 10C18 10.5523 17.5523 11 17 11H7C6.44771 11 6 10.5523 6 10Z"
-                                    fill="white" />
-                                <path
-                                    d="M7 13C6.44772 13 6 13.4477 6 14C6 14.5523 6.44771 15 7 15H17C17.5523 15 18 14.5523 18 14C18 13.4477 17.5523 13 17 13H7Z"
-                                    fill="white" />
-                                <path
-                                    d="M6 18C6 17.4477 6.44772 17 7 17H11C11.5523 17 12 17.4477 12 18C12 18.5523 11.5523 19 11 19H7C6.44772 19 6 18.5523 6 18Z"
-                                    fill="white" />
-                                <path clip-rule="evenodd"
-                                    d="M2 4C2 2.34315 3.34315 1 5 1H19C20.6569 1 22 2.34315 22 4V20C22 21.6569 20.6569 23 19 23H5C3.34315 23 2 21.6569 2 20V4ZM5 3H19C19.5523 3 20 3.44771 20 4V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4C4 3.44772 4.44771 3 5 3Z"
-                                    fill="white" fill-rule="evenodd" />
-                            </svg>
-                        </a>
+                </a>
+
+                <a href="../Notes/notes.html">
+                    <li class="icon show">
+                        <span class="name">Notes</span>
+                        <span><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i></span>
                     </li>
-                </ul>
-                
+                </a>
+
+
+            </ul>
+
+        </div>
+        <!--logout button-->
+        <div id="logoutButton" style="display: none; position: absolute; right: 4%; top: 20px;">
+            <button onclick="" class="btn btn-primary">Logout</button>
+        </div>
+        <div class="content_pane">
+            <div class="right_box">
+
+
+
+                <!-- modal -->
+                <div class="modal" id="todo_form">
+                    <div class="header">
+                        <div class="title">Add Todo</div>
+                        <button class="btn close-modal">&times;</button>
+                    </div>
+
+                    <div class="body" id="todo_form_body">
+                        <input type="text" id="todo_input" placeholder="Enter a task" />
+                        <input type="submit" value="add task" id="todo_submit" />
+                    </div>
+
                 </div>
-            <!--logout button-->
-            <div id="logoutButton" style="display: none; position: absolute; right: 4%; top: 20px;">
-                <button onclick="" class="btn btn-primary">Logout</button>
+                <!-- todo -->
+                <div id="to-do-heading">
+                    <h2>Kanban</h2>
+                </div>
+                <div class="todo-container">
+                    <div class="status" id="today">
+                        <h2>Todo</h2>
+                        <hr>
+                        <button id="add_btn" data-target-modal="#todo_form">+ Add task</button>
+                    </div>
+
+                    <div class="status" id="tomorrow">
+                        <h2>Doing</h2>
+                        <hr>
+                    </div>
+
+                    <div class="status" id="this_week">
+                        <h2>Done</h2>
+                        <hr>
+                    </div>
+
+                    <div class="status" id="completed">
+                        <h2>Completed</h2>
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div id="overlay"></div>
             </div>
-            <div class="content_pane">
-                <div class="right_box">
-                
-                
-                
-                    <!-- modal -->
-                    <div class="modal" id="todo_form">
-                        <div class="header">
-                            <div class="title">Add Todo</div>
-                            <button class="btn close-modal">&times;</button>
-                        </div>
-                
-                        <div class="body" id="todo_form_body">
-                            <input type="text" id="todo_input" placeholder="Enter a task" />
-                            <input type="submit" value="add task" id="todo_submit" />
-                        </div>
-                
-                    </div>
-                    <!-- todo -->
-                    <div id="to-do-heading">
-                        <h2>Kanban</h2>
-                    </div>
-                    <div class="todo-container">
-                        <div class="status" id="today">
-                            <h2>Todo</h2>
-                            <hr>
-                            <button id="add_btn" data-target-modal="#todo_form">+ Add task</button>
-                            </div>
-                            
-                            <div class="status" id="tomorrow">
-                            <h2>Doing</h2>
-                            <hr>
-                            </div>
-                            
-                            <div class="status" id="this_week">
-                            <h2>Done</h2>
-                            <hr>
-                            </div>
-                            
-                            <div class="status" id="completed">
-                                <h2>Completed</h2>
-                                <hr>
-                            </div>
-                            </div>
-                            
-                            
-                            <div id="overlay"></div>
-                </div>
-                </div>
-                </div>
+        </div>
+    </div>
 
-        
 
-        <script src="todo.js"></script>
 
-        <!-- JQuery -->
+    <script src="todo.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fbac178719.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
