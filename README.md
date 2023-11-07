@@ -150,12 +150,19 @@ pipeline {
 ### git 
 
 git init 
+
 git config --global user.name 'username'
+
 git config --global user.email 'email' 
+
 git add remote origin <repo_link>
+
 git branch -M main
+
 git add <file>
+
 git commit -M 'message'
+
 git push 
 
 
