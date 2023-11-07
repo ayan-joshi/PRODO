@@ -64,19 +64,30 @@ Enjoy using Prodo and stay productive!
 ### docker code 
 
 1.	Clone the repository using the following command:
+
 git clone https://github.com/docker/getting-started-app.git
 
 # syntax=docker/dockerfile:1
+
 FROM node:18-alpine
+
 WORKDIR /app
+
 COPY . .
+
 RUN yarn install --production
+
 CMD ["node", "src/index.js"]
+
 EXPOSE 3000
 
+
 cd /path/to/getting-started-app
+
 Build the image:
+
 docker build -t getting-started .
+
 docker run -dp 127.0.0.1:3000:3000 getting-started
 
 
@@ -85,12 +96,19 @@ docker run -dp 127.0.0.1:3000:3000 getting-started
 ### Docker command 
 
 docker pull redis
+
 docker build -t <image_name> [source_path] [host_path]
+
 docker start <image_name>
+
 docker run <image_name>
+
 docker stop
+
 docker ps
+
 docker images
+
 docker push <image_name>
 
 
