@@ -118,6 +118,7 @@ docker push <image_name>
 
 ### jenkins pipeline 
 
+```
 pipeline { 
     agent any 
     stages { 
@@ -140,6 +141,7 @@ pipeline {
 
     }
 }
+```
 
 ### git 
 
