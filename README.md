@@ -67,6 +67,8 @@ Enjoy using Prodo and stay productive!
 
 git clone https://github.com/docker/getting-started-app.git
 
+```
+
 # syntax=docker/dockerfile:1
 
 FROM node:18-alpine
@@ -80,6 +82,8 @@ RUN yarn install --production
 CMD ["node", "src/index.js"]
 
 EXPOSE 3000
+
+```
 
 
 cd /path/to/getting-started-app
