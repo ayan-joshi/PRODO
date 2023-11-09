@@ -2,7 +2,7 @@
 
 ### https://prodo-mauve.vercel.app/
 
-Welcome to Prodo, your go-to student productivity app! Prodo is designed to help students stay organized, focused, and productive. Whether you need to manage your schedule, take notes, use a Pomodoro timer, or organize tasks using Kanban boards, Prodo has you covered
+Welcome to Prodo, your go-to student productivity app! Prodo is designed to help students stay organized, focused, and productive. Whether you need to manage your schedule, take notes, use a Pomodoro timer, or organize tasks using Kanban boards, Prodo has you covered.
 
 ## Features
 
@@ -41,6 +41,16 @@ Welcome to Prodo, your go-to student productivity app! Prodo is designed to help
 - jQuery
 - Bootstrap
 - Firebase (for database and authentication)
+
+## Contributors
+
+A big thank you to the following contributors who have dedicated their time and effort to this project:
+
+- [Ayan Joshi](https://github.com/ayan-joshi) - [@ayan-joshi](https://github.com/ayan-joshi)
+- [Rishikesh Bhor](https://github.com/rizzikesh) - [@rizzikesh](https://github.com/rizzikesh)
+- [Aarya Paradkar](https://github.com/aaryaparadkar) - [@aaryaparadkar](https://github.com/aaryaparadkar)
+- [Arya](https://github.com/aryas006) - [@aryas006](https://github.com/aryas006)
+
 
 ## Contributing
 
