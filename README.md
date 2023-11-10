@@ -25,7 +25,7 @@ Welcome to Prodo, your go-to student productivity app! Prodo is designed to help
 - Internet connection
 
 ### Usage
-1. Visit the Prodo app at [(https://prodo-mauve.vercel.app/)].
+1. Visit the Prodo app at https://prodo-mauve.vercel.app/.
 2. Sign up or log in to access your personalized dashboard.
 3. Explore and utilize the features as needed:
    - Scheduler Calendar: Add and manage your events.
