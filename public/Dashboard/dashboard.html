@@ -19,9 +19,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
 
     <!-- auth -->
     <script type="module">
+        // adding tutorial
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     const driverObj = driver({
+        //         showProgress: true,
+        //         showButtons: ['next', 'previous'],
+        //         steps: [
+        //             { element: '.card-content.calendar', popover: { title: 'Calendar Card', description: 'This is the Calendar card.' }},
+        //             { element: '.card-content.todo', popover: { title: 'Kanban Card', description: 'This is the Kanban card.' }},
+        //             { element: '.card-content.timer', popover: { title: 'Pomodoro Card', description: 'This is the Pomodoro card.' }},
+        //             // Add more steps for other elements as needed
+        //         ]
+        //     });
+        // })
+
+        // driverObj.drive();
+
         // Import functions
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
@@ -164,7 +182,7 @@
 
                 <a href="../Calendar/calendar.html">
                     <li class="icon show">
-                        <span class="name">Calender</span>
+                        <span class="name">Calendar</span>
                         <span><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i></span>
                     </li>
                 </a>
